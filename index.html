@@ -14,59 +14,68 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- ВНИМАТЕЛЬНО! класс "cms-index-index" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
+<!-- ВНИМАТЕЛЬНО! класс "transparent-menu" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
 
-<body class="cms-index-index">
+<body class="transparent-menu">
     <div class="page-wrapper">
 
         <!-- Header -->
         <header class="page-header">
             <div class="header js-header">
 
-                <nav class="navbar navbar-expand-xl">
                     <div class="container">
+                        <div class="d-flex justify-content-between">
 
-                        <a class="navbar-brand hover-opacity" href="index.html">
-                            <img class="logo" src="img/logo.svg" alt="logo curl shop">
-                        </a>
-
-                        <!-- Desctop -->
-                        <div class="d-flex align-items-center">
-                            <div class="me-5">
-                                <a href="tel:+35725104162" class="fw-500">+357 25104162</a>
+                            <a class="navbar-brand hover-opacity" href="index.html">
+                                <img class="logo" src="img/logo.svg" alt="logo curl shop">
+                            </a>
+    
+                            <!-- Desctop -->
+                            <div class="d-flex flex-column align-items-end">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-5">
+                                        <a class="link-phone" href="tel:+35725104162" class="fw-500">+357 25104162</a>
+                                    </div>
+                                    <ul class="icons-inline list-inline mb-0 d-flex align-items-center">
+                                        <!-- Search -->
+                                        <li class="list-inline-item">
+                                            <a href="#searchForm" data-bs-toggle="offcanvas" aria-controls="searchForm">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.9481 4.12823C8.50494 4.12823 4.08752 8.52699 4.08752 13.9591C4.08752 19.3912 8.50494 23.7899 13.9481 23.7899C16.3631 23.7899 18.5763 22.924 20.2912 21.4861C20.3083 21.5066 20.3264 21.5265 20.3457 21.5457L26.348 27.5282C26.6833 27.8624 27.226 27.8615 27.5602 27.5262C27.8944 27.1909 27.8935 26.6482 27.5582 26.314L21.5559 20.3315C21.5379 20.3136 21.5193 20.2966 21.5001 20.2806C22.9407 18.5719 23.8087 16.367 23.8087 13.9591C23.8087 8.52699 19.3913 4.12823 13.9481 4.12823ZM5.80181 13.9591C5.80181 9.47911 9.44636 5.84252 13.9481 5.84252C18.4499 5.84252 22.0944 9.47911 22.0944 13.9591C22.0944 18.4391 18.4499 22.0757 13.9481 22.0757C9.44636 22.0757 5.80181 18.4391 5.80181 13.9591Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                            <a href="contacts.html">
+                                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M4.14884 8.23523C4.12267 8.38259 4.10902 8.53419 4.10902 8.68883V23.2177C4.10902 24.6273 5.24302 25.7841 6.65913 25.7841H25.2817C26.6978 25.7841 27.8318 24.6273 27.8318 23.2177V8.68883C27.8318 8.53419 27.8182 8.38259 27.792 8.23523C27.8785 7.96097 27.825 7.64958 27.6231 7.41607C27.5499 7.33135 27.4637 7.26449 27.37 7.21585C26.91 6.55605 26.1488 6.12241 25.2817 6.12241H6.65913C5.7921 6.12241 5.03083 6.55604 4.57083 7.21584C4.47716 7.26448 4.39097 7.33135 4.31773 7.41607C4.11586 7.64958 4.06235 7.96098 4.14884 8.23523ZM5.82331 9.85065V23.2177C5.82331 23.6961 6.20524 24.0698 6.65913 24.0698H25.2817C25.7356 24.0698 26.1175 23.6961 26.1175 23.2177V9.85065L17.6145 17.2015L17.6068 17.2081L17.6067 17.2081C17.1488 17.5945 16.5699 17.8075 15.9704 17.8075C15.371 17.8075 14.792 17.5945 14.3341 17.2081L14.3263 17.2015L14.3264 17.2015L5.82331 9.85065ZM25.6961 7.94893C25.5732 7.87732 25.4314 7.83669 25.2817 7.83669H6.65913C6.50948 7.83669 6.36766 7.87732 6.24476 7.94893L15.443 15.9007C15.5929 16.0259 15.7794 16.0932 15.9704 16.0932C16.1614 16.0932 16.3479 16.0259 16.4979 15.9007L25.6961 7.94893Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <!-- Menu -->
+                                        <li class="list-inline-item">
+                                            <a class="menu-trigger" href="#offcanvasMenu" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasMenu">
+                                                <svg width="39" height="25" viewBox="0 0 39 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="svg-stroke" d="M8.98846 4.97662H30.9969" stroke-width="2" stroke-linecap="round"/>
+                                                    <path class="svg-stroke" d="M8.98846 12.9533H30.9969" stroke-width="2" stroke-linecap="round"/>
+                                                    <path class="svg-stroke" d="M8.98846 20.9299H30.9969" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <nav class="short-menu">
+                                    <ul class="menu-short-menu">
+                                        <li><a href="#">Products</a></li>
+                                        <li><a href="#">Private</a></li>
+                                        <li><a href="#">Commercial</a></li>
+                                    </ul>
+                                </nav>
                             </div>
-                            <ul class="list-inline mb-0 d-flex align-items-center">
-                                <!-- Search -->
-                                <li class="list-inline-item">
-                                    <a class="nav-link p-1" href="#searchForm" data-bs-toggle="offcanvas" aria-controls="searchForm">
-                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9481 4.12823C8.50494 4.12823 4.08752 8.52699 4.08752 13.9591C4.08752 19.3912 8.50494 23.7899 13.9481 23.7899C16.3631 23.7899 18.5763 22.924 20.2912 21.4861C20.3083 21.5066 20.3264 21.5265 20.3457 21.5457L26.348 27.5282C26.6833 27.8624 27.226 27.8615 27.5602 27.5262C27.8944 27.1909 27.8935 26.6482 27.5582 26.314L21.5559 20.3315C21.5379 20.3136 21.5193 20.2966 21.5001 20.2806C22.9407 18.5719 23.8087 16.367 23.8087 13.9591C23.8087 8.52699 19.3913 4.12823 13.9481 4.12823ZM5.80181 13.9591C5.80181 9.47911 9.44636 5.84252 13.9481 5.84252C18.4499 5.84252 22.0944 9.47911 22.0944 13.9591C22.0944 18.4391 18.4499 22.0757 13.9481 22.0757C9.44636 22.0757 5.80181 18.4391 5.80181 13.9591Z" fill="#778894"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <a class="nav-link p-1" href="catalog-favorites.html">
-                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.14884 8.23523C4.12267 8.38259 4.10902 8.53419 4.10902 8.68883V23.2177C4.10902 24.6273 5.24302 25.7841 6.65913 25.7841H25.2817C26.6978 25.7841 27.8318 24.6273 27.8318 23.2177V8.68883C27.8318 8.53419 27.8182 8.38259 27.792 8.23523C27.8785 7.96097 27.825 7.64958 27.6231 7.41607C27.5499 7.33135 27.4637 7.26449 27.37 7.21585C26.91 6.55605 26.1488 6.12241 25.2817 6.12241H6.65913C5.7921 6.12241 5.03083 6.55604 4.57083 7.21584C4.47716 7.26448 4.39097 7.33135 4.31773 7.41607C4.11586 7.64958 4.06235 7.96098 4.14884 8.23523ZM5.82331 9.85065V23.2177C5.82331 23.6961 6.20524 24.0698 6.65913 24.0698H25.2817C25.7356 24.0698 26.1175 23.6961 26.1175 23.2177V9.85065L17.6145 17.2015L17.6068 17.2081L17.6067 17.2081C17.1488 17.5945 16.5699 17.8075 15.9704 17.8075C15.371 17.8075 14.792 17.5945 14.3341 17.2081L14.3263 17.2015L14.3264 17.2015L5.82331 9.85065ZM25.6961 7.94893C25.5732 7.87732 25.4314 7.83669 25.2817 7.83669H6.65913C6.50948 7.83669 6.36766 7.87732 6.24476 7.94893L15.443 15.9007C15.5929 16.0259 15.7794 16.0932 15.9704 16.0932C16.1614 16.0932 16.3479 16.0259 16.4979 15.9007L25.6961 7.94893Z" fill="#778894"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <!-- Menu -->
-                                <li class="list-inline-item">
-                                    <a class="menu-trigger" href="#offcanvasMenu" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasMenu">
-                                        <svg width="39" height="25" viewBox="0 0 39 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.98846 4.97662H30.9969" stroke="#778894" stroke-width="2" stroke-linecap="round"/>
-                                            <path d="M8.98846 12.9533H30.9969" stroke="#778894" stroke-width="2" stroke-linecap="round"/>
-                                            <path d="M8.98846 20.9299H30.9969" stroke="#778894" stroke-width="2" stroke-linecap="round"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
 
+                        </div>
                     </div>
-                </nav>
 
             </div>
         </header>
@@ -75,38 +84,46 @@
         <main class="main page-main">
 
             <!-- Hero -->
-            <section class="section-hero position-relative section bg-light vh-100 py-5 bg-img" style="background-image: url(img/bg-hero-01.jpg);">
+            <section class="section section-hero position-relative bg-img" style="background-image: url(img/bg-hero-01.jpg);">
 
                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(29, 45, 58, 0.72);"></div>
 
-                <div class="position-relative d-flex align-items-center h-100">
+                <div class="position-relative d-flex align-items-end h-100">
                     <div class="container">
                         <div class="mx-auto text-center" style="max-width: 981px;">
                             <h1 class="ff-title text-uppercase text-white">Savallos Traiding &amp; Management Group Ltd</h1>
                             <div class="mx-auto" style="max-width: 850px;">
-                                <p class="ff-title fs-18 fs-xl-22">When things in your life are ideal, you use the products of Savallos Traiding &amp; Management Group Ltd</p></div>
+                                <p class="ff-title text-gray-blue fs-18 fs-xl-22">When things in your life are ideal, you use the products of Savallos Traiding &amp; Management Group Ltd</p>
+                            </div>
+                            <div style="margin-top: 120px;">
+                                <a class="btn btn-primary-blue" href="#">Contact now</a>
+                            </div>
+                            <div style="margin-top: 120px;">
+                                <a class="btn btn-icon" href="#section-about">
+                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8572 27L22.2534 27L35.1563 15H31.222L21.1106 24.404L10.778 15H6.84375L19.8572 27Z" fill="#A7B4C8"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </section>
 
-
             <!-- Section -->
-            <section class="section bg-white vh-100 py-5">
-
+            <!-- <section class="section bg-white vh-100 py-5" id="section-about">
                 <div class="position-relative d-flex align-items-center h-100">
                     <div class="container">
                         section bg-white
                     </div>
                 </div>
-
-            </section>
+            </section> -->
 
         </main>
 
         <!-- Footer -->
-        <footer class="footer py-5 bg-light vh-100 page-footer">
+        <footer class="footer py-5 page-footer">
 
             footer
 
@@ -139,6 +156,27 @@
                                 </button>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search form -->
+        <div class="offcanvas offcanvas-end offcanvas-main-menu" id="offcanvasMenu" tabindex="-1">
+            <div class="offcanvas-header">
+                <div class="container">
+                    <button type="button" class="btn p-1 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L24 24" stroke="#778894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 24L24 1" stroke="#778894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="py-3">
+                        <p>123 Asdf ASDF</p>
                     </div>
                 </div>
             </div>
