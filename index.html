@@ -85,9 +85,7 @@
 
             <!-- Hero -->
             <section class="section section-hero position-relative bg-img" style="background-image: url(img/bg-hero-01.jpg);">
-
                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(29, 45, 58, 0.72);"></div>
-
                 <div class="position-relative d-flex align-items-end h-100">
                     <div class="container">
                         <div class="mx-auto text-center" style="max-width: 981px;">
@@ -108,17 +106,255 @@
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <!-- Section -->
-            <!-- <section class="section bg-white vh-100 py-5" id="section-about">
-                <div class="position-relative d-flex align-items-center h-100">
-                    <div class="container">
-                        section bg-white
+            <style>
+                .text-block {
+                    position: relative;
+                    background: rgba(255, 255, 255, 0.94);
+                    border: 2px solid #778894;
+                    margin: -70px 21px 0 21px;
+                    padding: 25px 33px 32px 28px;
+                    z-index: 1;
+                }
+                @media (min-width: 1200px) {
+                    .text-block {
+                        margin: 55px -120px 0 0;
+                        padding: 38px 63px 44px 46px;
+                    }
+                }
+            </style>
+            <section class="section py-5 bg-white" id="section-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 order-xl-2">
+                            <img src="img/about.png" alt="">
+                        </div>
+                        <div class="col-lg-6 order-xl-1">
+                            <div class="text-block">
+                                <h1>Savallos Traiding &amp; Management Group Ltd</h1>
+                                <p>When things in your life are ideal, you use the products of Savallos Traiding &amp; Management Group Ltd </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>Because making people feel better is all that we want</p>
+                                <a href="#">learn more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
+
+            <!-- Section -->
+            <style>
+                .title-with-line {
+                    display: flex;
+                    align-items: center;
+                }
+                .title-with-line::after {
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    width: 100%;
+                    margin-left: 10px;
+                    background-color: #A7B4C8;
+                }
+            </style>
+            <section class="section py-5 bg-white">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <a class="hover-opacity" href="#">
+                                <img src="img/cat-01.png" alt="">
+                            </a>
+                            <h2 class="title-with-line ff-title text-uppercase mt-4 mb-0">Private</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="hover-opacity" href="#">
+                                <img src="img/cat-02.png" alt="">
+                            </a>
+                            <h2 class="title-with-line ff-title text-uppercase mt-4 mb-0">Commercial</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section -->
+            <style>
+                .features-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 48px 32px;
+                    border: 1px solid #A7B4C8;
+                }
+                .btn-features-item {
+                    position: absolute;
+                    bottom: -45px;
+                    width: fit-content;
+                    border: 16px solid #fff;
+                    z-index: 1;
+                }
+            </style>
+            <section class="section py-5 bg-white">
+                <div class="container">
+                    <div class="row g-4 row-cols-1 row-cols-xl-3">
+                        <div class="col">
+                            <div class="position-relative d-flex flex-column align-items-center h-100">
+                                <div class="features-item h-100">
+                                    <h2 class="ff-title text-uppercase">Discover our<br> projects?</h2>
+                                    <p class="text-lowercase">Discover our projects</p>
+                                </div>
+                                <div class="btn-features-item">
+                                    <a class="btn btn-primary bg-white" href="#">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative d-flex flex-column align-items-center h-100">
+                                <div class="features-item h-100">
+                                    <h2 class="ff-title text-uppercase">Come meet us?</h2>
+                                    <p class="text-lowercase">Come meet us</p>
+                                </div>
+                                <div class="btn-features-item">
+                                    <a class="btn btn-primary bg-white" href="#">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative d-flex flex-column align-items-center h-100">
+                                <div class="features-item h-100">
+                                    <h2 class="ff-title text-uppercase">Contact our experts?</h2>
+                                    <p class="text-lowercase">Contact our experts</p>
+                                </div>
+                                <div class="btn-features-item">
+                                    <a class="btn btn-primary bg-white" href="#">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section waves -->
+            <section class="section pt-5 pb-4 bg-white">
+                <img class="w-100" src="img/waves-gray-01.svg" alt="">
+            </section>
+
+            <!-- section -->
+            <style>
+                .title-shade {
+                    display: flex;
+                    align-items: center;
+                    height: 80px;
+                    margin-bottom: 105px;
+                    background-position: 50px 50%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+            </style>
+            <section class="section py-5 bg-img">
+                <div class="container">
+                    <div class="title-shade" style="background-image: url(img/title-our-projects.svg);">
+                        <h2 class="ff-title text-uppercase mb-0">Our Projects</h2>
+                    </div>
+
+                    <div>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-xl-7">
+                                <img src="img/our-projects-01.png" alt="">
+                            </div>
+                            <div class="col-xl-5">
+                                <div>
+                                    <h2>Savallos Traiding &amp; Management Group Ltd</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-xl-7 order-xl-2">
+                                <img src="img/our-projects-02.png" alt="">
+                            </div>
+                            <div class="col-xl-5 order-xl-1">
+                                <div>
+                                    <h2>Savallos Traiding &amp; Management Group Ltd</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- section -->
+            <section class="section py-5 bg-img">
+                <div class="container">
+                    <div class="title-shade" style="margin-bottom: 60px; background-image: url(img/title-partners.svg);">
+                        <h2 class="ff-title text-uppercase mb-0">Partners</h2>
+                    </div>
+
+                    <div class="w-100 overflow-auto">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="img/partner-01.png" alt="">
+                            <img src="img/partner-02.png" alt="">
+                            <img src="img/partner-03.png" alt="">
+                            <img src="img/partner-04.png" alt="">
+                            <img src="img/partner-05.png" alt="">
+                            <img src="img/partner-06.png" alt="">
+                            <img src="img/partner-07.png" alt="">
+                            <img src="img/partner-08.png" alt="">
+                            <img src="img/partner-09.png" alt="">
+                            <img src="img/partner-10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section waves -->
+            <section class="section bg-white" style="padding-top: 120px; padding-bottom: 120px;">
+                <img class="w-100" src="img/waves-gray-01.svg" alt="">
+            </section>
+
+            <!-- section -->
+            <section class="section py-5 bg-img">
+                <div class="container">
+                    <div class="title-shade" style="margin-bottom: 60px; background-image: url(img/title-products.svg);">
+                        <h2 class="ff-title text-uppercase mb-0">Products</h2>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!-- section -->
+            <section class="section py-5 bg-img">
+                <div class="container">
+                    <div class="title-shade" style="margin-bottom: 60px; background-image: url(img/title-services.svg);">
+                        <h2 class="ff-title text-uppercase mb-0">Services</h2>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!-- section -->
+            <section class="section py-5 bg-img">
+                <div class="container">
+                    <div class="title-shade" style="margin-bottom: 60px; background-image: url(img/title-contacts.svg);">
+                        <h2 class="ff-title text-uppercase mb-0">Contacts</h2>
+                    </div>
+
+                    
+                </div>
+            </section>
 
         </main>
 
