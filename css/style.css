@@ -220,106 +220,26 @@ h6, .h6 {
     font-weight: 700;
 }
 
-.fs-10 {
-    font-size: 10px;
-}
-
-.fs-12 {
-    font-size: 12px;
-}
-
-.fs-14 {
-    font-size: 14px;
-}
-
-.fs-16 {
-    font-size: 16px;
-}
-
 .fs-18 {
     font-size: 18px;
-}
-
-.fs-20 {
-    font-size: 20px;
 }
 
 .fs-22 {
     font-size: 22px;
 }
 
-.fs-24 {
-    font-size: 24px;
-}
-
-.fs-28 {
-    font-size: 28px;
-}
-
-.fs-32 {
-    font-size: 32px;
-}
-
-.fs-34 {
-    font-size: 34px;
-}
-
-.fs-42 {
-    font-size: 42px;
+.fs-30 {
+    font-size: 30px;
 }
 
 @media (min-width: 1200px) {
 
-    .fs-xl-8 {
-        font-size: 8px;
-    }
-
-    .fs-xl-10 {
-        font-size: 10px;
-    }
-    
-    .fs-xl-12 {
-        font-size: 12px;
-    }
-    
-    .fs-xl-14 {
-        font-size: 14px;
-    }
-    
-    .fs-xl-16 {
-        font-size: 16px;
-    }
-    
-    .fs-xl-18 {
-        font-size: 18px;
-    }
-    
-    .fs-xl-20 {
-        font-size: 20px;
-    }
-
     .fs-xl-22 {
         font-size: 22px;
     }
-    
-    .fs-xl-24 {
-        font-size: 24px;
-    }
-    
-    .fs-xl-28 {
-        font-size: 28px;
-    }
-    
-    .fs-xl-32 {
-        font-size: 32px;
-    }
-    
-    .fs-xl-34 {
-        font-size: 34px;
-    }
 
-    .fs-xl-42 {
-        font-size: 42px;
+    .fs-xl-40 {
+        font-size: 40px;
     }
 }
 
