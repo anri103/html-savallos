@@ -147,6 +147,22 @@
 
             <!-- Section Products -->
             <style>
+                .grid-item .image-container {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .grid-item .image-container img {
+                    width: 100%;
+                    height: 380px;
+                    object-fit: cover;
+                    -webkit-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                }
+                .grid-item:hover .image-container img {
+                    transform: scale(1.03);
+                }
                 .title-with-line {
                     display: flex;
                     align-items: center;
@@ -169,16 +185,20 @@
                     <div class="category-container">
                         <div class="row g-4">
                             <div class="col-lg-6">
-                                <a class="hover-opacity" href="#">
-                                    <img src="img/cat-01.png" alt="">
+                                <a class="grid-item" href="#">
+                                    <picture class="image-container">
+                                        <img src="img/cat-01.png" alt="">
+                                    </picture>
                                 </a>
                                 <h2 class="title-with-line ff-title text-uppercase mt-4 mb-0">
                                     <a href="#">Private</a>
                                 </h2>
                             </div>
                             <div class="col-lg-6">
-                                <a class="hover-opacity" href="#">
-                                    <img src="img/cat-02.png" alt="">
+                                <a class="grid-item" href="#">
+                                    <picture class="image-container">
+                                        <img src="img/cat-02.png" alt="">
+                                    </picture>
                                 </a>
                                 <h2 class="title-with-line ff-title text-uppercase mt-4 mb-0">
                                     <a href="#">Commercial</a>
