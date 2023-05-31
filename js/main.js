@@ -9,16 +9,39 @@ const toggleButtons = document.querySelectorAll('.menu-item-has-children');
 })();
 
 //////////////////////////////////////////////////////////////////
-// [ Главный слайдер ]
+// [ Слайдер продуктов ]
 
-const heroSwiper = new Swiper('.heroSwiper', {
+const prodSwiper = new Swiper('.prodSwiper', {
     loop: true,
-    autoplay: {
-        delay: 3500,
-    },
+    slidesPerView: 5.5,
+    spaceBetween: 30,
+    centeredSlides: true,
     pagination: {
-        clickable: true,
         el: '.swiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-arrow-next',
+        prevEl: '.swiper-arrow-prev',
+    },
+});
+
+const partnersSwiper = new Swiper('.partnersSwiper', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 16,
+    freeMode: true,
+    navigation: {
+        nextEl: '.swiper-custom-next',
+        prevEl: '.swiper-custom-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 5,
+        },
+        1024: {
+            slidesPerView: 10,
+        },
     },
 });
 

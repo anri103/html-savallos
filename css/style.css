@@ -54,7 +54,7 @@ Version: 1.0
     --bs-warning: #FBE121;
     --bs-danger: #F94239;
     --bs-light: #f8f9fa;
-    --bs-dark: #212529;
+    --bs-dark: #1d2d3a;
     --bs-primary-rgb: 13, 110, 253;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 198, 244, 92;
@@ -63,7 +63,7 @@ Version: 1.0
     --bs-warning-rgb: 251, 225, 33;
     --bs-danger-rgb: 249, 66, 57;
     --bs-light-rgb: 248, 249, 250;
-    --bs-dark-rgb: 33, 37, 41;
+    --bs-dark-rgb: 29, 45, 58;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
@@ -338,7 +338,6 @@ textarea {
 .form-check-input:focus {
     border-color: #1D2D3A;
     box-shadow: none;
-    background-color: #FFFEF5;
 }
 
 .search-form .form-control {
@@ -661,14 +660,15 @@ img {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .main-menu>li {
-    margin-bottom: 22px;
+    margin-bottom: 41px;
 }
 
 .main-menu>li>a {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "URWClassicoRegular", sans-serif;
     text-transform: uppercase;
     color: #fff;
@@ -677,8 +677,9 @@ img {
 .main-menu .sub-menu {
     display: none;
     list-style: none;
-    padding-left: 66px;
+    margin-top: 16px;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .main-menu .sub-menu.open {
@@ -690,8 +691,26 @@ img {
 }
 
 .main-menu .sub-menu>li>a {
-    font-size: 30px;
+    font-size: 22px;
     color: #A7B4C8;
+}
+
+@media (min-width: 1200px) {
+    .main-menu {
+        text-align: left;
+    }
+    .main-menu>li {
+        margin-bottom: 22px;
+    }
+    .main-menu>li>a {
+        font-size: 40px;
+    }
+    .main-menu .sub-menu {
+        padding-left: 66px;
+    }
+    .main-menu .sub-menu>li>a {
+        font-size: 30px;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////
