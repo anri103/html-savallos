@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Index - Savallos</title>
+    <title>About - Savallos</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -16,24 +16,9 @@
 
 <!-- ВНИМАТЕЛЬНО! класс "transparent-menu" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
 
-<body class="transparent-menu">
+<body class="">
 
     <!-- Main menu -->
-    <style>
-        .offcanvas-main-menu {
-            --bs-offcanvas-width: 100%;
-            background-color: #1D2D3A;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        @media (min-width: 1200px) {
-            .offcanvas-main-menu {
-                background-image: url(img/bg-menu.jpg);
-            }
-        }
-
-    </style>
     <div class="offcanvas offcanvas-end offcanvas-main-menu" id="offcanvasMenu" tabindex="-1">
         <div class="offcanvas-header">
             <div class="container">
@@ -47,9 +32,9 @@
                     </button>
                     <div>
                         <!-- Desktop -->
-                        <img class="logo-head d-none d-xl-block" src="img/logo-head.svg" alt="logo" style="max-width: 127px;">
+                        <img class="logo-head d-none d-xl-block" src="img/logo-head.svg" alt="logo">
                         <!-- Mobile -->
-                        <img class="logo-head-m d-xl-none" src="img/logo-head-m.svg" alt="logo" style="max-width: 84px;">
+                        <img class="logo-head-m d-xl-none" src="img/logo-head-m.svg" alt="logo">
                     </div>
                 </div>
             </div>
@@ -120,7 +105,8 @@
                         <div class="d-flex justify-content-between">
 
                             <a class="navbar-brand hover-opacity" href="index.html">
-                                <img class="logo" src="img/logo.svg" alt="logo curl shop">
+                                <img class="logo logo-white" src="img/logo-white.svg" alt="logo white">
+                                <img class="logo logo-color" src="img/logo-color.svg" alt="logo color">
                             </a>
     
                             <!-- Desctop -->
@@ -175,491 +161,97 @@
 
         <!-- Main -->
         <main class="main page-main">
-
-            <!-- Hero -->
-            <section class="section section-hero mb-105 position-relative bg-img" style="background-image: url(img/bg-hero-01.jpg);">
-                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(29, 45, 58, 0.72);"></div>
-                <div class="position-relative d-flex align-items-end h-100">
-                    <div class="container">
-                        <div class="mx-auto text-center" style="max-width: 981px;">
-                            <h1 class="ff-title text-uppercase text-white">Savallos Traiding &amp; Management Group Ltd</h1>
-                            <div class="mx-auto" style="max-width: 850px;">
-                                <p class="ff-title text-gray-blue fs-18 fs-xl-22">When things in your life are ideal, you use the products of Savallos Traiding &amp; Management Group Ltd</p>
-                            </div>
-                            <div style="margin-top: 120px;">
-                                <a class="btn btn-primary-blue" href="#">Contact now</a>
-                            </div>
-                            <div style="margin-top: 120px;">
-                                <a class="btn btn-icon" href="#section-about">
-                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.8572 27L22.2534 27L35.1563 15H31.222L21.1106 24.404L10.778 15H6.84375L19.8572 27Z" fill="#A7B4C8"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            
+            <!-- Breadcrumb -->
+            <section class="section breadcrumb-section">
+                <div class="container">
+                    <nav class="breadcrumb" role="navigation">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><span>About us</span></li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
 
             <!-- Section About -->
-            <style>
-                .text-block-about {
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.94);
-                    border: 2px solid #778894;
-                    margin: -70px 21px 0 21px;
-                    padding: 25px 33px 32px 28px;
-                    z-index: 1;
-                }
-                @media (min-width: 1200px) {
-                    .text-block-about {
-                        margin: 55px -120px 0 0;
-                        padding: 38px 63px 44px 46px;
-                    }
-                }
-            </style>
             <section class="section mb-105" id="section-about">
                 <div class="container">
+                    <div class="title-shade" style="background-image: url(img/title-about-us.svg);">
+                        <h2 class="ff-title text-uppercase text-dark mb-0">About us</h2>
+                    </div>
                     <div class="row">
-                        <div class="col-xl-6 order-xl-2">
+                        <div class="col-xl-7 order-xl-2">
                             <img class="w-100" src="img/about.png" alt="">
                         </div>
-                        <div class="col-xl-6 order-xl-1">
+                        <div class="col-xl-5 order-xl-1">
                             <div class="text-block-about">
-                                <p class="ff-title text-uppercase text-dark fs-22 fs-xl-40">Savallos Traiding &amp; Management Group Ltd</p>
-                                <p class="ff-title fs-14 fs-xl-22">When things in your life are ideal, you use the products of Savallos Traiding &amp; Management Group Ltd </p>
-                                <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                <p>Ut enim ad <strong>minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <p><strong>Because making people feel better is all that we want</strong></p>
-                                <a class="text-decoration-underline" href="#">learn more</a>
+                                <div class="mb-4">
+                                    <p class="ff-title text-uppercase text-dark fs-22 fs-xl-40 mb-2">Savallos Traiding &amp; Management Group Ltd</p>
+                                    <p class="ff-title fs-14 fs-xl-22">When things in your life are ideal, you use the products of Savallos Traiding &amp; Management Group Ltd</p>
+                                </div>
+                                <p>Savallos TMG has a wide range of equipment for wellness and SPA and treatment departments of Hotels, SPA Centers, Rehab Clinics, such as:</p>
+                                <ul>
+                                    <li>Relieves stress</li>
+                                    <li>Cellulite treatment</li>
+                                    <li>Improvement of blood circulation</li>
+                                    <li>Stimulation of the lymphatic system</li>
+                                    <li>Increasing the elasticity of the skin and connective tissue</li>
+                                    <li>Participation in tenders, quotation, auction</li>
+                                    <li>Weight loss effect</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Section Products -->
-            <style>
-                .grid-item .image-container {
-                    display: block;
-                    width: 100%;
-                    position: relative;
-                    overflow: hidden;
-                }
-                .grid-item .image-container img {
-                    width: 100%;
-                    height: 380px;
-                    object-fit: cover;
-                    -webkit-transition: all 0.5s ease;
-                    transition: all 0.5s ease;
-                }
-                .grid-item:hover .image-container img {
-                    transform: scale(1.03);
-                }
-                .title-with-line {
-                    display: flex;
-                    align-items: center;
-                    white-space: nowrap;
-                }
-                .title-with-line::after {
-                    content: '';
-                    display: block;
-                    height: 1px;
-                    width: 100%;
-                    margin-left: 10px;
-                    background-color: #A7B4C8;
-                }
-                .products-container {
-                    margin-top: 88px;
-                }
-                .slider-item .image-container {
-                    display: block;
-                    width: 100%;
-                    position: relative;
-                    overflow: hidden;
-                }
-                .slider-item .image-container img {
-                    width: 100%;
-                    height: 152px;
-                    object-fit: cover;
-                    -webkit-transition: all 0.5s ease;
-                    transition: all 0.5s ease;
-                }
-                .slider-item:hover .image-container img {
-                    transform: scale(1.03);
-                }
-                .slider-counter {
-                    position: static;
-                    width: 60px;
-                    text-align: right;
-                }
-            </style>
             <section class="section mb-105">
                 <div class="container">
-                    <div class="category-container">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="grid-item">
-                                    <a href="#">
-                                        <picture class="image-container">
-                                            <img src="img/cat-01.png" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h2 class="title-with-line ff-title text-uppercase mt-4 mb-0">
-                                    <a href="#">Private</a>
-                                </h2>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="grid-item">
-                                    <a href="#">
-                                        <picture class="image-container">
-                                            <img src="img/cat-02.png" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h2 class="title-with-line ff-title text-uppercase mt-4 mb-0">
-                                    <a href="#">Commercial</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="products-container">
-                        <div class="swiper prodSwiper">
-                            <div class="swiper-wrapper">
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-01.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Finnish Sauna</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-01.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Finnish Sauna</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-01.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Finnish Sauna</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-02.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Finnish Sauna</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-03.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Finnish Sauna</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-04.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Lorem ipsum</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <div class="swiper-slide">
-                                    <div class="slider-item d-flex flex-column">
-                                        <a href="#">
-                                            <picture class="image-container">
-                                                <img src="img/prod-05.png" alt="">
-                                            </picture>
-                                        </a>
-                                        <div class="prod-body">
-                                            <p class="title-with-line ff-title mt-3 mb-0">
-                                                <a href="#">Lorem ipsum</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
-                            <div class="swiper-pagination slider-counter fs-14"></div>
-                            <div class="position-relative d-flex align-items-center gap-3">
-                                <div class="swiper-arrow-prev">
-                                    <img src="img/arrow-left-gray.svg" alt="">
-                                </div>
-                                <div class="swiper-arrow-next">
-                                    <img src="img/arrow-right-gray.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                    <p class="text-uppercase text-dark fs-22 fs-xl-30 mb-4">Savallos TMG supplies medical equipment:</p>
+                    <ul class="ul-columns-2">
+                        <li>X-ray Equipment and Tomography</li>
+                        <li>ENT Equipment</li>
+                        <li>Functional Diagnostic Equipment</li>
+                        <li>Anesthesiology and Resuscitation</li>
+                        <li>Surgery</li>
+                        <li>Orthopedics</li>
+                        <li>Obstetrics and Gynecology</li>
+                        <li>Urology</li>
+                        <li>Proctology</li>
+                        <li>Endoscopy</li>
+                        <li>Plastic Surgery</li>
+                        <li>Cosmetology</li>
+                        <li>Participation in tenders, quotation, auction</li>
+                        <li>Physiotherapy and Rehabilitation and others</li>
+                    </ul>
+                    <div class="mt-5" style="max-width: 750px;">
+                        <p>Our customers are General Hospitals, Private Hospitals, small clinics and Diagnostic Centers.</p>
+                        <p>Savallos TMG provide complex equipping of medical facilities, service, project planning of health care centers including special divisions such as: ICU departments, operating theaters, SSD, balneology and rehabilitation departments.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Section -->
-            <style>
-                .feature-col-wrap {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 60px;
-                }
-                .feature-col-wrap>* {
-                    flex: 1 1 auto;
-                    max-width: 350px;
-                }
-                .features-item {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    text-align: center;
-                    padding: 48px 32px;
-                    border: 1px solid #A7B4C8;
-                }
-                .btn-features-item {
-                    position: absolute;
-                    bottom: -45px;
-                    width: fit-content;
-                    padding: 16px;
-                    background: #fff;
-                    z-index: 1;
-                }
-            </style>
             <section class="section mb-105">
                 <div class="container">
-                    <div class="feature-col-wrap">
-                        <div class="feature-col-item">
-                            <div class="position-relative d-flex flex-column align-items-center h-100">
-                                <div class="features-item w-100 h-100">
-                                    <h2 class="ff-title text-uppercase">Discover our<br> projects?</h2>
-                                    <p class="text-lowercase">Discover our projects</p>
-                                </div>
-                                <div class="btn-features-item bg-white">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-col-item">
-                            <div class="position-relative d-flex flex-column align-items-center h-100">
-                                <div class="features-item w-100 h-100">
-                                    <h2 class="ff-title text-uppercase">Come meet us?</h2>
-                                    <p class="text-lowercase">Come meet us</p>
-                                </div>
-                                <div class="btn-features-item bg-white">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-col-item">
-                            <div class="position-relative d-flex flex-column align-items-center h-100">
-                                <div class="features-item w-100 h-100">
-                                    <h2 class="ff-title text-uppercase">Contact our experts?</h2>
-                                    <p class="text-lowercase">Contact our experts</p>
-                                </div>
-                                <div class="btn-features-item bg-white">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center mb-3">
+                        <h3 class="ff-title fs-30 fs-xl-40 mb-0">Subscribe to keep up with  news</h3>
                     </div>
-                </div>
-            </section>
-
-            <!-- section waves -->
-            <section class="section pt-5 pb-4 bg-white">
-                <img class="w-100" src="img/waves-gray-01.svg" alt="">
-            </section>
-
-            <!-- section -->
-            <style>
-                .section-our-projects {
-                    padding: 150px 0 83px;
-                }
-                .title-shade {
-                    display: flex;
-                    align-items: center;
-                    height: 80px;
-                    margin-bottom: 110px;
-                    background-position: 50px 50%;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-                .text-blocks-container>*+* {
-                    margin-top: 70px;
-                }
-                .text-block-left {
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.94);
-                    border: 2px solid #778894;
-                    margin: -70px 21px 0 21px;
-                    padding: 25px 33px 32px 28px;
-                    z-index: 1;
-                }
-                .text-block-right {
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.94);
-                    border: 2px solid #778894;
-                    margin: -70px 21px 0 21px;
-                    padding: 25px 33px 32px 28px;
-                    z-index: 1;
-                }
-                @media (min-width: 1200px) {
-                    .text-blocks-container>*+* {
-                        margin-top: 96px;
-                    }
-                    .text-block-left {
-                        margin: 55px -120px 0 0;
-                        padding: 38px 63px 44px 46px;
-                    }
-                    .text-block-right {
-                        margin: 55px 0 0 -120px;
-                        padding: 38px 63px 44px 46px;
-                    }
-                }
-            </style>
-            <section class="section section-our-projects bg-img" style="background-image: url(img/bg-our-projects.svg);">
-                <div class="container">
-                    <div class="title-shade" style="background-image: url(img/title-our-projects.svg);">
-                        <h2 class="ff-title text-uppercase text-dark mb-0">Our Projects</h2>
-                    </div>
-
-                    <div class="text-blocks-container">
-                        <!-- Item -->
-                        <div>
-                            <div class="row align-items-center">
-                                <div class="col-xl-7">
-                                    <img class="w-100" src="img/our-projects-01.png" alt="">
-                                </div>
-                                <div class="col-xl-5">
-                                    <div class="text-block-right">
-                                        <h2 class="ff-title text-uppercase text-dark fs-22 fs-xl-40">Savallos Traiding &amp; Management Group Ltd</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                        <div class="mt-5">
-                                            <a class="text-decoration-underline" href="#">learn more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item -->
-                        <div>
-                            <div class="row align-items-center">
-                                <div class="col-xl-7 order-xl-2">
-                                    <img class="w-100" src="img/our-projects-02.png" alt="">
-                                </div>
-                                <div class="col-xl-5 order-xl-1">
-                                    <div class="text-block-left">
-                                        <h2 class="ff-title text-uppercase text-dark fs-22 fs-xl-40">Savallos Traiding &amp; Management Group Ltd</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                        <div class="mt-5">
-                                            <a class="text-decoration-underline" href="#">learn more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center" style="margin-top: 96px;">
-                        <a class="btn btn-primary-blue" href="#">view more</a>
-                    </div>
-
+                    <ul class="menu-inline text-center list-inline mb-0">
+                        <li class="list-inline-item fw-600">
+                            <a href="#" target="_blank" rel="nofollow">Pinterest</a>
+                        </li>
+                        <li class="list-inline-item fw-600">
+                            <a href="#" target="_blank" rel="nofollow">Facebook</a>
+                        </li>
+                        <li class="list-inline-item fw-600">
+                            <a href="#" target="_blank" rel="nofollow">Instagram</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
             <!-- section -->
-            <style>
-                .section-partners {
-                    padding: 140px 0 30px;
-                }
-                .partnersSwiper .partner-item {
-                    filter: grayscale(100%);
-                }
-                .outside-navigation {
-                    position: relative;
-                }
-                .swiper-custom-prev {
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-50%);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    background: #fff;
-                    padding: 8px;
-                    z-index: 2;
-                }
-                .swiper-custom-next {
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    background: #fff;
-                    padding: 8px;
-                    z-index: 2;
-                }
-
-            </style>
             <section class="section section-partners bg-img">
                 <div class="container">
                     <div class="title-shade" style="background-image: url(img/title-partners.svg);">
@@ -734,258 +326,8 @@
             </section>
 
             <!-- section waves -->
-            <section class="section bg-white" style="padding: 120px 0;">
+            <section class="section section-waves bg-white">
                 <img class="w-100" src="img/waves-gray-01.svg" alt="">
-            </section>
-
-            <!-- section -->
-            <style>
-                .card-products-wrap {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 90px;
-                }
-                .card-products-wrap>* {
-                    flex: 1 1 auto;
-                }
-                .product-card-header {
-                    position: relative;
-                    height: 258px;
-                    border: 2px solid #A7B4C8;
-                }
-                .product-card-title {
-                    position: absolute;
-                    top: -30px;
-                    left: 14px;
-                    padding: 8px;
-                    background-color: #fff;
-                }
-                .product-card-img {
-                    position: absolute;
-                    right: 0;
-                    bottom: -60px;
-                }
-                .product-card-body {
-                    margin-top: 80px;
-                }
-                .product-ul-grid {
-                    columns: 2;
-                    font-size: 14px;
-                }
-                .product-card-footer {
-                    margin-top: 33px;
-                }
-
-                @media (min-width: 1200px) {
-                    .product-card-title {
-                        top: -40px;
-                    }
-                    .product-card-header {
-                        height: 338px;
-                    }
-                    .product-ul-grid {
-                        columns: 3;
-                    }
-                }
-            </style>
-            <section class="section mb-105">
-                <div class="container">
-                    <div class="title-shade" style="background-image: url(img/title-products.svg);">
-                        <h2 class="ff-title text-uppercase text-dark mb-0">Products</h2>
-                    </div>
-
-                    <div class="card-products-wrap">
-
-                            <div class="card-product">
-                                <div class="product-card-header">
-                                    <div class="product-card-title">
-                                        <span class="ff-title fs-30 fs-xl-40">Hydroxeur Hot Tub</span>
-                                    </div>
-                                    <img class="product-card-img" src="img/product-01.png" alt="">
-                                </div>
-                                <div class="product-card-body">
-                                    <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                    <ul class="product-ul-grid">
-                                        <li>2300х900х860 mm</li>
-                                        <li>water</li>
-                                        <li>music</li>
-                                        <li>warmth</li>
-                                        <li>algae</li>
-                                        <li>oil</li>
-                                        <li>sea water</li>
-                                        <li>hydromassage</li>
-                                        <li>chromotherapy</li>
-                                    </ul>
-                                </div>
-                                <div class="product-card-footer">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-
-
-                            <div class="card-product">
-                                <div class="product-card-header">
-                                    <div class="product-card-title">
-                                        <span class="ff-title fs-30 fs-xl-40">Vulkanosand Couch</span>
-                                    </div>
-                                    <img class="product-card-img" src="img/product-02.png" alt="">
-                                </div>
-                                <div class="product-card-body">
-                                    <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                    <ul class="product-ul-grid">
-                                        <li>2300х900х860 mm</li>
-                                        <li>water</li>
-                                        <li>music</li>
-                                        <li>warmth</li>
-                                        <li>algae</li>
-                                        <li>oil</li>
-                                        <li>sea water</li>
-                                        <li>hydromassage</li>
-                                        <li>chromotherapy</li>
-                                    </ul>
-                                </div>
-                                <div class="product-card-footer">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-
-
-                            <div class="card-product">
-                                <div class="product-card-header">
-                                    <div class="product-card-title">
-                                        <span class="ff-title fs-30 fs-xl-40">Hydroxeur Hot Tub</span>
-                                    </div>
-                                    <img class="product-card-img" src="img/product-01.png" alt="">
-                                </div>
-                                <div class="product-card-body">
-                                    <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                    <ul class="product-ul-grid">
-                                        <li>2300х900х860 mm</li>
-                                        <li>water</li>
-                                        <li>music</li>
-                                        <li>warmth</li>
-                                        <li>algae</li>
-                                        <li>oil</li>
-                                        <li>sea water</li>
-                                        <li>hydromassage</li>
-                                        <li>chromotherapy</li>
-                                    </ul>
-                                </div>
-                                <div class="product-card-footer">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-
-
-                            <div class="card-product">
-                                <div class="product-card-header">
-                                    <div class="product-card-title">
-                                        <span class="ff-title fs-30 fs-xl-40">Vulkanosand Couch</span>
-                                    </div>
-                                    <img class="product-card-img" src="img/product-03.png" alt="">
-                                </div>
-                                <div class="product-card-body">
-                                    <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                    <ul class="product-ul-grid">
-                                        <li>2300х900х860 mm</li>
-                                        <li>water</li>
-                                        <li>music</li>
-                                        <li>warmth</li>
-                                        <li>algae</li>
-                                        <li>oil</li>
-                                        <li>sea water</li>
-                                        <li>hydromassage</li>
-                                        <li>chromotherapy</li>
-                                    </ul>
-                                </div>
-                                <div class="product-card-footer">
-                                    <a class="btn btn-primary" href="#">view more</a>
-                                </div>
-                            </div>
-
-                    </div>
-                    
-                </div>
-            </section>
-
-            <!-- section -->
-            <style>
-                .services-item {
-                    position: relative;
-                }
-                .services-body {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 100%;
-                    text-align: center;
-                }
-                .services-link {
-                    position: relative;
-                    color: #fff;
-                    text-decoration: underline;
-                }
-                
-                @media (min-width: 1200px) {
-                    .services-link {
-                        top: 50px;
-                        opacity: 0;
-                        transition: top 0.3s ease, opacity 0.3s ease;
-                    }
-                    .services-item:hover .services-link {
-                        top: 0;
-                        opacity: 1;
-                    }
-                }
-            </style>
-            <section class="section mb-105">
-                <div class="container">
-                    <div class="title-shade" style="background-image: url(img/title-services.svg);">
-                        <h2 class="ff-title text-uppercase text-dark mb-0">Services</h2>
-                    </div>
-
-                    <div class="d-flex flex-wrap gap-5 justify-content-center">
-                        <div class="services-item">
-                            <img src="img/services-01.png" alt="">
-                            <div class="services-body">
-                                <div class="ff-title text-uppercase fs-30 fs-xl-40 text-white">Сonsultation</div>
-                                <a class="services-link" href="#">learn more</a>
-                            </div>
-                        </div>
-                        <div class="services-item">
-                            <img src="img/services-02.png" alt="">
-                            <div class="services-body">
-                                <div class="ff-title text-uppercase fs-30 fs-xl-40 text-white">Technical Support</div>
-                                <a class="services-link" href="#">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section mb-105">
-                <div class="container">
-                    <div class="text-center mb-3">
-                        <h3 class="ff-title fs-30 fs-xl-40 mb-0">Subscribe to keep up with  news</h3>
-                    </div>
-                    <!-- <div class="text-center">
-                        <a href="#" target="_blank" rel="nofollow">Pinterest</a>
-                        <a href="#" target="_blank" rel="nofollow">Facebook</a>
-                        <a href="#" target="_blank" rel="nofollow">Instagram</a>
-                    </div> -->
-                    <ul class="menu-inline text-center list-inline mb-0">
-                        <li class="list-inline-item fw-600">
-                            <a href="#" target="_blank" rel="nofollow">Pinterest</a>
-                        </li>
-                        <li class="list-inline-item fw-600">
-                            <a href="#" target="_blank" rel="nofollow">Facebook</a>
-                        </li>
-                        <li class="list-inline-item fw-600">
-                            <a href="#" target="_blank" rel="nofollow">Instagram</a>
-                        </li>
-                    </ul>
-                </div>
             </section>
 
             <!-- section -->
@@ -1032,8 +374,8 @@
             <!-- Desktop Footer -->
             <div class="footer-desktop d-none d-xl-block">
                 <div class="container">
-                    <div class="d-flex">
-                        <div style="width: 30%; padding-right: 50px;">
+                    <div class="column-wrap d-flex">
+                        <div style="width: 30%;">
                             <div class="mb-5">
                                 <img class="logo img-fluid" src="img/logo-footer.svg" alt="">
                             </div>
@@ -1052,11 +394,11 @@
                             </div>
                         </div>
                         <div style="width: 70%;">
-                            <div class="d-flex">
-                                <div style="width: 33%; margin-right: 4.3%;">
+                            <div class="column-wrap d-flex">
+                                <div style="width: 40%;">
                                     <p class="ff-title text-uppercase fs-22 fs-xl-22">Products</p>
                                     <hr>
-                                    <ul class="footer-menu list-unstyled" style="columns: 2;">
+                                    <ul class="footer-menu ul-columns-2 list-unstyled">
                                         <li><a href="#">Hydroxeur 200</a></li>
                                         <li><a href="#">ThermoSpa</a></li>
                                         <li><a href="#">Rendezvous</a></li>
@@ -1076,7 +418,7 @@
                                         <li><a href="#">Commercial</a></li>
                                     </ul>
                                 </div>
-                                <div style="width: 18%; margin-right: 4.3%;">
+                                <div style="width: 20%;">
                                     <p class="ff-title text-uppercase fs-22 fs-xl-22">Services</p>
                                     <hr>
                                     <ul class="footer-menu list-unstyled">
@@ -1084,7 +426,7 @@
                                         <li><a href="#">Technical Support</a></li>
                                     </ul>
                                 </div>
-                                <div style="width: 18%; margin-right: 4.3%;">
+                                <div style="width: 20%;">
                                     <p class="ff-title text-uppercase fs-22 fs-xl-22">Savallos</p>
                                     <hr>
                                     <ul class="footer-menu list-unstyled">
@@ -1094,7 +436,7 @@
                                         <li><a href="#">Press</a></li>
                                     </ul>
                                 </div>
-                                <div style="width: 18%; margin-right: 0;">
+                                <div style="width: 20%;">
                                     <p class="ff-title text-uppercase fs-22 fs-xl-22">Follow us</p>
                                     <hr>
                                     <ul class="footer-menu list-unstyled">
@@ -1117,19 +459,19 @@
             <!-- Mobile Footer -->
             <div class="footer-mobile d-xl-none">
                 <div class="container">
-                    <div class="d-flex">
+                    <div class="column-wrap d-flex">
 
-                        <div style="width: 26%; margin-right: 4%;">
+                        <div style="width: 30%;">
                             <img class="logo img-fluid" src="img/logo-footer.svg" alt="">
                         </div>
 
-                        <div style="width: 70%; margin-right: 0;">
+                        <div style="width: 70%;">
                             <div class="accordeon-custom">
 
                                 <div>
                                     <p class="ff-title text-uppercase fs-22 fs-xl-22">Products</p>
                                         <hr>
-                                        <ul class="footer-menu list-unstyled" style="columns: 2;">
+                                        <ul class="footer-menu ul-columns-2 list-unstyled">
                                             <li><a href="#">Hydroxeur 200</a></li>
                                             <li><a href="#">ThermoSpa</a></li>
                                             <li><a href="#">Rendezvous</a></li>
