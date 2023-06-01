@@ -13,9 +13,9 @@ const toggleButtons = document.querySelectorAll('.menu-item-has-children');
 
 const prodSwiper = new Swiper('.prodSwiper', {
     loop: true,
-    slidesPerView: 5.5,
+    slidesPerView: 1.5,
     spaceBetween: 30,
-    centeredSlides: true,
+    freeMode: true,
     pagination: {
         el: '.swiper-pagination',
         type: 'fraction',
@@ -23,6 +23,14 @@ const prodSwiper = new Swiper('.prodSwiper', {
     navigation: {
         nextEl: '.swiper-arrow-next',
         prevEl: '.swiper-arrow-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3.5,
+        },
+        1200: {
+            slidesPerView: 5.5,
+        },
     },
 });
 
@@ -39,7 +47,7 @@ const partnersSwiper = new Swiper('.partnersSwiper', {
         768: {
             slidesPerView: 5,
         },
-        1024: {
+        1200: {
             slidesPerView: 10,
         },
     },
