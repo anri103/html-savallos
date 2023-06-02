@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Service - Savallos</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- ВНИМАТЕЛЬНО! класс "transparent-menu" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
+
+<body class="" style="overflow: hidden;">
+
+    <!-- Preloader -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background-color: #fff; z-index: 9999;">
+        <img src="img/loader.gif" alt="" width="180" height="180">
+    </div>
+
+    <!-- Main menu -->
+    <div class="offcanvas offcanvas-end offcanvas-main-menu" id="offcanvasMenu" tabindex="-1">
+        <div class="offcanvas-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <button type="button" class="btn p-1 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H34V34H0V0Z" fill="white" fill-opacity="0.01" />
+                            <path d="M6 6L29 29" stroke="white" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 29L29 6" stroke="white" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div>
+                        <!-- Desktop -->
+                        <img class="logo-head d-none d-xl-block" src="img/logo-head.svg" alt="logo">
+                        <!-- Mobile -->
+                        <img class="logo-head-m d-xl-none" src="img/logo-head-m.svg" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center py-3">
+                    <nav class="header-main-menu">
+                        <ul class="main-menu">
+                            <li class="menu-item"><a href="#">Savallos TMG</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Products</a>
+                                <ul class="sub-menu" role="menu">
+                                    <li class="menu-item"><a href="#">Private</a></li>
+                                    <li class="menu-item"><a href="#">Commercial</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#">Projeсts</a></li>
+                            <li class="menu-item"><a href="#">Service</a></li>
+                            <li class="menu-item"><a href="#">Newsletter</a></li>
+                            <li class="menu-item"><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mt-4">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="hover-opacity" href="#" target="_blank" rel="nofollow">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H50V50H0V0Z" fill="white" fill-opacity="0.01" />
+                                        <path
+                                            d="M35.4167 6.25H14.5833C9.98096 6.25 6.25 9.98096 6.25 14.5833V35.4167C6.25 40.0191 9.98096 43.75 14.5833 43.75H35.4167C40.0191 43.75 43.75 40.0191 43.75 35.4167V14.5833C43.75 9.98096 40.0191 6.25 35.4167 6.25Z"
+                                            stroke="#A7B4C8" stroke-width="2.40848" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.9998 33.3332C29.6022 33.3332 33.3332 29.6022 33.3332 24.9998C33.3332 20.3974 29.6022 16.6665 24.9998 16.6665C20.3974 16.6665 16.6665 20.3974 16.6665 24.9998C16.6665 29.6022 20.3974 33.3332 24.9998 33.3332Z"
+                                            stroke="#A7B4C8" stroke-width="2.40848" stroke-linejoin="round" />
+                                        <path
+                                            d="M37.3374 13.5416C37.3374 14.0271 36.9439 14.4207 36.4583 14.4207C35.9728 14.4207 35.5792 14.0271 35.5792 13.5416C35.5792 13.056 35.9728 12.6625 36.4583 12.6625C36.9439 12.6625 37.3374 13.056 37.3374 13.5416Z"
+                                            fill="black" stroke="#A7B4C8" stroke-width="2.40848" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="hover-opacity" href="#" target="_blank" rel="nofollow">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H50V50H0V0Z" fill="white" fill-opacity="0.01" />
+                                        <path
+                                            d="M35.4167 6.25H14.5833C9.98096 6.25 6.25 9.98096 6.25 14.5833V35.4167C6.25 40.0191 9.98096 43.75 14.5833 43.75H35.4167C40.0191 43.75 43.75 40.0191 43.75 35.4167V14.5833C43.75 9.98096 40.0191 6.25 35.4167 6.25Z"
+                                            stroke="#A7B4C8" stroke-width="2.40848" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M36.4583 20.7218H32.8593H32.4341C31.3182 20.7218 30.4136 21.6183 30.4136 22.7241V26.73H36.4583L35.5729 32.7349H30.4136V43.75H23.7665V32.7349H18.2783V26.73H23.6956L23.7665 21.0301L23.7466 18.9872C23.7187 16.1025 26.0558 13.7416 28.9666 13.7139C28.9835 13.7137 29.0003 13.7136 29.0173 13.7136H36.4583V20.7218Z"
+                                            fill="#A7B4C8" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="hover-opacity" href="#" target="_blank" rel="nofollow">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H50V50H0V0Z" fill="white" fill-opacity="0.01" />
+                                        <path
+                                            d="M35.4167 6.25H14.5833C9.98096 6.25 6.25 9.98096 6.25 14.5833V35.4167C6.25 40.0191 9.98096 43.75 14.5833 43.75H35.4167C40.0191 43.75 43.75 40.0191 43.75 35.4167V14.5833C43.75 9.98096 40.0191 6.25 35.4167 6.25Z"
+                                            stroke="#A7B4C8" stroke-width="2.40848" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.3429 28.866C23.7137 32.1637 22.9458 35.3251 20.6704 36.9765C19.9675 31.9923 21.7014 28.249 22.5066 24.2748C21.1335 21.9642 22.6715 17.3139 25.5669 18.4595C29.1294 19.8689 22.4821 27.0507 26.9441 27.9478C31.6037 28.8841 33.506 19.863 30.6171 16.9297C26.4423 12.6935 18.4651 16.8332 19.4458 22.8982C19.6844 24.3806 21.216 24.8303 20.0581 26.8771C17.3862 26.2841 16.5891 24.1771 16.6914 21.3677C16.8569 16.7689 20.823 13.5496 24.8019 13.104C29.8335 12.5408 34.5557 14.9508 35.2078 19.6841C35.9423 25.0268 32.937 30.8128 27.5563 30.3964C26.0978 30.283 25.4855 29.5601 24.3429 28.866Z"
+                                            fill="#A7B4C8" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <header class="page-header">
+            <div class="header js-header">
+
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+
+                        <a class="navbar-brand hover-opacity" href="index.html">
+                            <img class="logo logo-white" src="img/logo-white.svg" alt="logo white">
+                            <img class="logo logo-color" src="img/logo-color.svg" alt="logo color">
+                        </a>
+
+                        <!-- Desktop -->
+                        <div class="d-flex flex-column align-items-end">
+                            <div class="d-flex flex-column flex-xl-row align-items-end align-items-xl-center">
+                                <ul class="icons-inline list-inline mb-0 d-flex align-items-center order-xl-2">
+                                    <!-- Search -->
+                                    <li class="list-inline-item">
+                                        <a href="#searchForm" data-bs-toggle="offcanvas" aria-controls="searchForm">
+                                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.9481 4.12823C8.50494 4.12823 4.08752 8.52699 4.08752 13.9591C4.08752 19.3912 8.50494 23.7899 13.9481 23.7899C16.3631 23.7899 18.5763 22.924 20.2912 21.4861C20.3083 21.5066 20.3264 21.5265 20.3457 21.5457L26.348 27.5282C26.6833 27.8624 27.226 27.8615 27.5602 27.5262C27.8944 27.1909 27.8935 26.6482 27.5582 26.314L21.5559 20.3315C21.5379 20.3136 21.5193 20.2966 21.5001 20.2806C22.9407 18.5719 23.8087 16.367 23.8087 13.9591C23.8087 8.52699 19.3913 4.12823 13.9481 4.12823ZM5.80181 13.9591C5.80181 9.47911 9.44636 5.84252 13.9481 5.84252C18.4499 5.84252 22.0944 9.47911 22.0944 13.9591C22.0944 18.4391 18.4499 22.0757 13.9481 22.0757C9.44636 22.0757 5.80181 18.4391 5.80181 13.9591Z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <a href="contacts.html">
+                                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M4.14884 8.23523C4.12267 8.38259 4.10902 8.53419 4.10902 8.68883V23.2177C4.10902 24.6273 5.24302 25.7841 6.65913 25.7841H25.2817C26.6978 25.7841 27.8318 24.6273 27.8318 23.2177V8.68883C27.8318 8.53419 27.8182 8.38259 27.792 8.23523C27.8785 7.96097 27.825 7.64958 27.6231 7.41607C27.5499 7.33135 27.4637 7.26449 27.37 7.21585C26.91 6.55605 26.1488 6.12241 25.2817 6.12241H6.65913C5.7921 6.12241 5.03083 6.55604 4.57083 7.21584C4.47716 7.26448 4.39097 7.33135 4.31773 7.41607C4.11586 7.64958 4.06235 7.96098 4.14884 8.23523ZM5.82331 9.85065V23.2177C5.82331 23.6961 6.20524 24.0698 6.65913 24.0698H25.2817C25.7356 24.0698 26.1175 23.6961 26.1175 23.2177V9.85065L17.6145 17.2015L17.6068 17.2081L17.6067 17.2081C17.1488 17.5945 16.5699 17.8075 15.9704 17.8075C15.371 17.8075 14.792 17.5945 14.3341 17.2081L14.3263 17.2015L14.3264 17.2015L5.82331 9.85065ZM25.6961 7.94893C25.5732 7.87732 25.4314 7.83669 25.2817 7.83669H6.65913C6.50948 7.83669 6.36766 7.87732 6.24476 7.94893L15.443 15.9007C15.5929 16.0259 15.7794 16.0932 15.9704 16.0932C16.1614 16.0932 16.3479 16.0259 16.4979 15.9007L25.6961 7.94893Z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <!-- Menu -->
+                                    <li class="list-inline-item">
+                                        <a class="menu-trigger" href="#offcanvasMenu" data-bs-toggle="offcanvas"
+                                            role="button" aria-controls="offcanvasMenu">
+                                            <svg width="39" height="25" viewBox="0 0 39 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-stroke" d="M8.98846 4.97662H30.9969" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path class="svg-stroke" d="M8.98846 12.9533H30.9969" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path class="svg-stroke" d="M8.98846 20.9299H30.9969" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mt-4 mt-xl-0 me-xl-5 order-xl-1">
+                                    <a class="link-phone fw-500" href="tel:+35725104162">+357 25104162</a>
+                                </div>
+                            </div>
+                            <nav class="short-menu d-none d-xl-block">
+                                <ul class="menu-short-menu">
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Private</a></li>
+                                    <li><a href="#">Commercial</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="main page-main">
+
+            <!-- Section breadcrumb -->
+            <section class="section breadcrumb-section">
+                <div class="container">
+                    <nav class="breadcrumb" role="navigation">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><span>Private</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- Section about -->
+            <section class="section mb-105" id="section-about">
+                <div class="container">
+                    <div class="title-shade" style="background-image: url(img/title-private.svg);">
+                        <h2 class="ff-title text-uppercase text-dark mb-0">Private</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7 order-xl-2">
+                            <img class="w-100" src="img/section-products.jpg" alt="">
+                        </div>
+                        <div class="col-xl-5 order-xl-1">
+                            <div class="text-block-about">
+                                <div class="mb-4">
+                                    <p class="ff-title text-uppercase text-dark fs-22 fs-xl-40 mb-2">Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit</p>
+                                    <p class="ff-title fs-14 fs-xl-22">When things in your life are ideal, you use the
+                                        products of Savallos Traiding &amp; Management Group Ltd</p>
+                                </div>
+                                <p>Young, vigorously growing and developing company with <strong>highly professional
+                                        employees</strong> with long-term experience in medical equipment sales.</p>
+                                <p>Basic sphere of activities of Savallos TMG are direct sales of <strong>diagnostic,
+                                        surgery and rehabilitation equipment, communications with hospitals and private
+                                        medical centers</strong> as well as equipment installation, after-sales service,
+                                    medical staff training, and warranty and post-warranty maintenance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section slider -->
+            <section class="section mb-105">
+                <div class="swiper centeredSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <img src="img/private-slider-img.jpg" alt="">
+                        </div>
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <img src="img/private-slider-img.jpg" alt="">
+                        </div>
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <img src="img/private-slider-img.jpg" alt="">
+                        </div>
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <img src="img/private-slider-img.jpg" alt="">
+                        </div>
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <img src="img/private-slider-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-3" style="margin-top: 35px;">
+                    <div class="centeredSwiper-pagination swiper-pagination slider-counter fs-14"></div>
+                    <div class="position-relative d-flex align-items-center gap-3">
+                        <div class="swiper-arrow-prev">
+                            <img src="img/arrow-left-gray.svg" alt="">
+                        </div>
+                        <div class="swiper-arrow-next">
+                            <img src="img/arrow-right-gray.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section waves -->
+            <section class="section section-waves bg-white">
+                <img class="w-100" src="img/waves-gray-01.svg" alt="">
+            </section>
+
+            <!-- Section features 2 -->
+            <section class="section mb-105">
+                <div class="container">
+                    <div style="margin-bottom: 32px;">
+                        <p class="ff-title text-uppercase text-dark fs-30 fs-xl-40">Why Savallos TMG?</p>
+                    </div>
+                    <div class="feature-col-wrap">
+                        <div class="feature-col-item">
+                            <div class="card-feature h-100">
+                                <div class="features-item text-start w-100 h-100">
+                                    <p class="ff-title text-dark fs-30">Complete solutions</p>
+                                    <p>Comprehensive service offering for the spa, health, beauty &amp; wellness industries and medicine.</p>
+                                    <div class="mt-4">
+                                        <a class="text-uppercase fs-12" href="#">Discover our projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-col-item">
+                            <div class="card-feature h-100">
+                                <div class="features-item text-start w-100 h-100">
+                                    <p class="ff-title text-dark fs-30">Leading global supplier</p>
+                                    <p>Comprehensive service offering for the spa, health, beauty &amp; wellness industries and medicine.</p>
+                                    <div class="mt-4">
+                                        <a class="text-uppercase fs-12" href="#">Discover our projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-col-item">
+                            <div class="card-feature h-100">
+                                <div class="features-item text-start w-100 h-100">
+                                    <p class="ff-title text-dark fs-30">Manufacturer warranty</p>
+                                    <p>Comprehensive service offering for the spa, health, beauty &amp; wellness industries and medicine.</p>
+                                    <div class="mt-4">
+                                        <a class="text-uppercase fs-12" href="#">Discover our projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section products slider -->
+            <section class="section mb-105">
+                <div class="container">
+                    <div class="title-shade" style="background-image: url(img/title-products.svg);">
+                        <h2 class="ff-title text-uppercase text-dark mb-0">Products</h2>
+                    </div>
+                    
+                    <div class="text-with-img-container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7">
+                                <img class="w-100" src="img/our-projects-01.png" alt="">
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="text-block-right">
+                                    <h2 class="ff-title text-uppercase text-dark fs-22 fs-xl-40">Savallos Traiding &amp; Management Group Ltd</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <div class="mt-5">
+                                        <a class="text-decoration-underline" href="#">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-container">
+                        <div class="swiper prodSwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-01.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Finnish Sauna</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-01.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Finnish Sauna</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-01.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Finnish Sauna</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-02.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Finnish Sauna</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-03.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Finnish Sauna</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-04.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Lorem ipsum</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <div class="slider-item d-flex flex-column">
+                                        <a href="#">
+                                            <picture class="image-container">
+                                                <img src="img/prod-05.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="prod-body">
+                                            <p class="title-with-line ff-title mt-3 mb-0">
+                                                <a href="#">Lorem ipsum</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
+                            <div class="prodSwiper-pagination swiper-pagination slider-counter fs-14"></div>
+                            <div class="position-relative d-flex align-items-center gap-3">
+                                <div class="swiper-arrow-prev">
+                                    <img src="img/arrow-left-gray.svg" alt="">
+                                </div>
+                                <div class="swiper-arrow-next">
+                                    <img src="img/arrow-right-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section catalog download -->
+            <section class="section mb-105">
+                <div class="container">
+                    <div class="mx-auto" style="max-width: 550px;">
+                        <div class="d-flex align-items-center justify-content-between gap-3">
+                            <div class="flex-shrink-0">
+                                <img class="img-fluid" src="img/catalog-download.png" alt="">
+                            </div>
+                            <div>
+                                <p class="ff-title text-dark fs-18 fs-xl-30 mb-0">Private catalog</p>
+                                <a href="#">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="img/icon _download.svg" alt="">
+                                        <span class="text-uppercase fs-12">Download PDF - 10MB</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section waves -->
+            <section class="section section-waves bg-white">
+                <img class="w-100" src="img/waves-gray-01.svg" alt="">
+            </section>
+
+            <!-- Section products grid -->
+            <section class="section mb-105">
+                <div class="container">
+
+                    <div class="products-filter">
+                        <div class="d-flex gap-4 flex-column flex-xl-row mb-5">
+                            <div>
+                                <select class="form-select category-select fs-22">
+                                    <option selected>SELECT YOUR SECTOR</option>
+                                    <option value="1">Сategories</option>
+                                    <option value="2">Сategories</option>
+                                    <option value="3">Сategories</option>
+                                    <option value="4">Сategories</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select class="form-select category-select fs-22">
+                                    <option selected>SELECT YOUR SECTOR</option>
+                                    <option value="1">Сategories</option>
+                                    <option value="2">Сategories</option>
+                                    <option value="3">Сategories</option>
+                                    <option value="4">Сategories</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select class="form-select category-select fs-22">
+                                    <option selected>SELECT YOUR SECTOR</option>
+                                    <option value="1">Сategories</option>
+                                    <option value="2">Сategories</option>
+                                    <option value="3">Сategories</option>
+                                    <option value="4">Сategories</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-products-wrap">
+
+                        <div class="card-product">
+                            <div class="product-card-header">
+                                <div class="product-card-title">
+                                    <span class="ff-title fs-30 fs-xl-40">Hydroxeur Hot Tub</span>
+                                </div>
+                                <img class="product-card-img" src="img/product-01.png" alt="">
+                            </div>
+                            <div class="product-card-body">
+                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
+                                <ul class="product-ul-grid">
+                                    <li>2300х900х860 mm</li>
+                                    <li>water</li>
+                                    <li>music</li>
+                                    <li>warmth</li>
+                                    <li>algae</li>
+                                    <li>oil</li>
+                                    <li>sea water</li>
+                                    <li>hydromassage</li>
+                                    <li>chromotherapy</li>
+                                </ul>
+                            </div>
+                            <div class="product-card-footer">
+                                <a class="btn btn-primary" href="#">view more</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-product">
+                            <div class="product-card-header">
+                                <div class="product-card-title">
+                                    <span class="ff-title fs-30 fs-xl-40">Vulkanosand Couch</span>
+                                </div>
+                                <img class="product-card-img" src="img/product-02.png" alt="">
+                            </div>
+                            <div class="product-card-body">
+                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
+                                <ul class="product-ul-grid">
+                                    <li>2300х900х860 mm</li>
+                                    <li>water</li>
+                                    <li>music</li>
+                                    <li>warmth</li>
+                                    <li>algae</li>
+                                    <li>oil</li>
+                                    <li>sea water</li>
+                                    <li>hydromassage</li>
+                                    <li>chromotherapy</li>
+                                </ul>
+                            </div>
+                            <div class="product-card-footer">
+                                <a class="btn btn-primary" href="#">view more</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-product">
+                            <div class="product-card-header">
+                                <div class="product-card-title">
+                                    <span class="ff-title fs-30 fs-xl-40">Hydroxeur Hot Tub</span>
+                                </div>
+                                <img class="product-card-img" src="img/product-01.png" alt="">
+                            </div>
+                            <div class="product-card-body">
+                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
+                                <ul class="product-ul-grid">
+                                    <li>2300х900х860 mm</li>
+                                    <li>water</li>
+                                    <li>music</li>
+                                    <li>warmth</li>
+                                    <li>algae</li>
+                                    <li>oil</li>
+                                    <li>sea water</li>
+                                    <li>hydromassage</li>
+                                    <li>chromotherapy</li>
+                                </ul>
+                            </div>
+                            <div class="product-card-footer">
+                                <a class="btn btn-primary" href="#">view more</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-product">
+                            <div class="product-card-header">
+                                <div class="product-card-title">
+                                    <span class="ff-title fs-30 fs-xl-40">Vulkanosand Couch</span>
+                                </div>
+                                <img class="product-card-img" src="img/product-03.png" alt="">
+                            </div>
+                            <div class="product-card-body">
+                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
+                                <ul class="product-ul-grid">
+                                    <li>2300х900х860 mm</li>
+                                    <li>water</li>
+                                    <li>music</li>
+                                    <li>warmth</li>
+                                    <li>algae</li>
+                                    <li>oil</li>
+                                    <li>sea water</li>
+                                    <li>hydromassage</li>
+                                    <li>chromotherapy</li>
+                                </ul>
+                            </div>
+                            <div class="product-card-footer">
+                                <a class="btn btn-primary" href="#">view more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Section features 1 -->
+            <section class="section mb-105">
+                <div class="container">
+                    <div class="feature-col-wrap">
+                        <div class="feature-col-item">
+                            <div class="card-feature h-100">
+                                <div class="features-item w-100 h-100">
+                                    <h2 class="ff-title text-uppercase">Discover our<br> projects?</h2>
+                                    <p class="text-lowercase">Discover our projects</p>
+                                </div>
+                                <div class="btn-features-item bg-white">
+                                    <a class="btn btn-primary" href="#">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-col-item">
+                            <div class="card-feature h-100">
+                                <div class="features-item w-100 h-100">
+                                    <h2 class="ff-title text-uppercase">Come meet us?</h2>
+                                    <p class="text-lowercase">Come meet us</p>
+                                </div>
+                                <div class="btn-features-item bg-white">
+                                    <a class="btn btn-primary" href="#">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-col-item">
+                            <div class="card-feature h-100">
+                                <div class="features-item w-100 h-100">
+                                    <h2 class="ff-title text-uppercase">Contact our experts?</h2>
+                                    <p class="text-lowercase">Contact our experts</p>
+                                </div>
+                                <div class="btn-features-item bg-white">
+                                    <a class="btn btn-primary" href="#">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section contacts -->
+            <section class="section mb-105">
+                <div class="container">
+                    <div class="title-shade" style="background-image: url(img/title-contacts.svg);">
+                        <h2 class="ff-title text-uppercase text-dark mb-0">Contacts</h2>
+                    </div>
+
+                    <div class="ff-title text-dark">
+                        <p>Griva Digeni, 84, Savvides Building 3rd floor, office 301, 3101 Limassol, Cyprus</p>
+                        <p>Tel.: <a href="tel:+35725104162">+35 7251 04162</a></p>
+                        <p><a href="mailto:info@stmg-cy.org">info@stmg-cy.org</a></p>
+                    </div>
+
+                    <div class="mt-5">
+                        <a class="btn btn-primary" href="#">Call</a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Section request info -->
+            <section class="section mb-105 bg-img" style="padding: 60px 0; background-image: url(img/waves-gray-01.svg);">
+                <div class="container">
+                    <div class="d-flex flex-column flex-xl-row align-items-xl-center">
+                        <div class="ff-title fs-30 fs-xl-40 flex-shrink-0 me-4 mb-3 mb-xl-0">REQUEST INFORMATION</div>
+                        <div class="d-flex align-items-center" style="gap: 43px;">
+                            <p class="fs-14 fs-xl-18 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <a href="#">
+                                <svg width="11" height="25" viewBox="0 0 11 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 13.5091L11 11.3932L-1.09262e-06 0L-9.845e-07 2.47396L9.40402 12.4023L-1.08124e-07 22.526L0 25L11 13.5091Z" fill="#778894"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer py-5 page-footer">
+
+            <!-- Desktop footer -->
+            <div class="footer-desktop d-none d-xl-block">
+                <div class="container">
+                    <div class="column-wrap d-flex">
+                        <div style="width: 30%;">
+                            <div class="mb-5">
+                                <img class="logo img-fluid" src="img/logo-footer.svg" alt="">
+                            </div>
+                            <p>Griva Digeni, 84, Savvides Building 3rd floor, office 301, 3101 - Limassol, Cyprus</p>
+                            <p>Tel: <a href="tel:+35725104162">+35 7251 04162</a></p>
+                            <p>Email: <a href="mailto:info@stmg-cy.org">info@stmg-cy.org</a></p>
+                            <div class="mt-5">
+                                <ul class="menu-inline list-inline mb-0">
+                                    <li class="list-inline-item"><a href="#">Quality policy</a></li>
+                                    <li class="list-inline-item"><a href="#">Privacy policy</a></li>
+                                    <li class="list-inline-item"><a href="#">Cookies</a></li>
+                                </ul>
+                            </div>
+                            <div class="mt-4">
+                                <p>© savallos.com </p>
+                            </div>
+                        </div>
+                        <div style="width: 70%;">
+                            <div class="column-wrap d-flex">
+                                <div style="width: 40%;">
+                                    <p class="ff-title text-uppercase fs-22 fs-xl-22">Products</p>
+                                    <hr>
+                                    <ul class="footer-menu ul-columns-2 list-unstyled">
+                                        <li><a href="#">Hydroxeur 200</a></li>
+                                        <li><a href="#">ThermoSpa</a></li>
+                                        <li><a href="#">Rendezvous</a></li>
+                                        <li><a href="#">Yin Yang</a></li>
+                                        <li><a href="#">Vis a Vis</a></li>
+                                        <li><a href="#">Sharko</a></li>
+                                        <li><a href="#">Orient</a></li>
+                                        <li><a href="#">Ergolima</a></li>
+                                        <li><a href="#">Twaeli</a></li>
+                                        <li><a href="#">Vulkanosand</a></li>
+                                        <li><a href="#">Worishofen</a></li>
+                                        <li><a href="#">Vichy Swarovski Rainbow</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="footer-menu list-unstyled text-uppercase">
+                                        <li><a href="#">Private</a></li>
+                                        <li><a href="#">Commercial</a></li>
+                                    </ul>
+                                </div>
+                                <div style="width: 20%;">
+                                    <p class="ff-title text-uppercase fs-22 fs-xl-22">Services</p>
+                                    <hr>
+                                    <ul class="footer-menu list-unstyled">
+                                        <li><a href="#">Consulting</a></li>
+                                        <li><a href="#">Technical Support</a></li>
+                                    </ul>
+                                </div>
+                                <div style="width: 20%;">
+                                    <p class="ff-title text-uppercase fs-22 fs-xl-22">Savallos</p>
+                                    <hr>
+                                    <ul class="footer-menu list-unstyled">
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Our Projects</a></li>
+                                        <li><a href="#">Download</a></li>
+                                        <li><a href="#">Press</a></li>
+                                    </ul>
+                                </div>
+                                <div style="width: 20%;">
+                                    <p class="ff-title text-uppercase fs-22 fs-xl-22">Follow us</p>
+                                    <hr>
+                                    <ul class="footer-menu list-unstyled">
+                                        <li><a href="#" target="_blank" rel="nofollow">Facebook</a></li>
+                                        <li><a href="#" target="_blank" rel="nofollow">Pinterest</a></li>
+                                        <li><a href="#" target="_blank" rel="nofollow">Instagram</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="footer-menu list-unstyled text-uppercase">
+                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">Contacts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile footer -->
+            <div class="footer-mobile d-xl-none">
+                <div class="container">
+                    <div class="column-wrap d-flex">
+
+                        <div style="width: 30%;">
+                            <img class="logo img-fluid" src="img/logo-footer.svg" alt="">
+                        </div>
+
+                        <div style="width: 70%;">
+                            <div class="accordeon-custom">
+
+                                <div>
+                                    <p class="ff-title text-uppercase fs-22 fs-xl-22">Products</p>
+                                    <hr>
+                                    <ul class="footer-menu ul-columns-2 list-unstyled">
+                                        <li><a href="#">Hydroxeur 200</a></li>
+                                        <li><a href="#">ThermoSpa</a></li>
+                                        <li><a href="#">Rendezvous</a></li>
+                                        <li><a href="#">Yin Yang</a></li>
+                                        <li><a href="#">Vis a Vis</a></li>
+                                        <li><a href="#">Sharko</a></li>
+                                        <li><a href="#">Orient</a></li>
+                                        <li><a href="#">Ergolima</a></li>
+                                        <li><a href="#">Twaeli</a></li>
+                                        <li><a href="#">Vulkanosand</a></li>
+                                        <li><a href="#">Worishofen</a></li>
+                                        <li><a href="#">Vichy Swarovski Rainbow</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="footer-menu list-unstyled text-uppercase">
+                                        <li><a href="#">Private</a></li>
+                                        <li><a href="#">Commercial</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="accordeon-custom-item">
+                                    <button type="button" class="widget-collapse-link collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-widget-01"
+                                        aria-expanded="false" aria-controls="collapse-widget-01">
+                                        <span class="ff-title text-uppercase fs-22 fs-xl-22">Services</span>
+                                    </button>
+                                    <hr>
+                                    <div class="collapse" id="collapse-widget-01">
+                                        <ul class="footer-menu list-unstyled">
+                                            <li><a href="#">Consulting</a></li>
+                                            <li><a href="#">Technical Support</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordeon-custom-item">
+                                    <button type="button" class="widget-collapse-link collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-widget-02"
+                                        aria-expanded="false" aria-controls="collapse-widget-02">
+                                        <span class="ff-title text-uppercase fs-22 fs-xl-22">Savallos</span>
+                                    </button>
+                                    <hr>
+                                    <div class="collapse" id="collapse-widget-02">
+                                        <ul class="footer-menu list-unstyled">
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Our Projects</a></li>
+                                            <li><a href="#">Download</a></li>
+                                            <li><a href="#">Press</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordeon-custom-item">
+                                    <button type="button" class="widget-collapse-link collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-widget-03"
+                                        aria-expanded="false" aria-controls="collapse-widget-03">
+                                        <span class="ff-title text-uppercase fs-22 fs-xl-22">Follow us</span>
+                                    </button>
+                                    <hr>
+                                    <div class="collapse" id="collapse-widget-03">
+                                        <ul class="footer-menu list-unstyled">
+                                            <li><a href="#" target="_blank" rel="nofollow">Facebook</a></li>
+                                            <li><a href="#" target="_blank" rel="nofollow">Pinterest</a></li>
+                                            <li><a href="#" target="_blank" rel="nofollow">Instagram</a></li>
+                                        </ul>
+                                        <hr>
+                                        <ul class="footer-menu list-unstyled text-uppercase">
+                                            <li><a href="#">Newsletter</a></li>
+                                            <li><a href="#">Contacts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: 47px;">
+                        <p>Griva Digeni, 84, Savvides Building 3rd floor, office 301, 3101 - Limassol, Cyprus</p>
+                        <p>Tel: <a href="tel:+35725104162">+35 7251 04162</a></p>
+                        <p>Email: <a href="mailto:info@stmg-cy.org">info@stmg-cy.org</a></p>
+                        <div class="mt-5">
+                            <ul class="menu-inline list-inline mb-0">
+                                <li class="list-inline-item"><a href="#">Quality policy</a></li>
+                                <li class="list-inline-item"><a href="#">Privacy policy</a></li>
+                                <li class="list-inline-item"><a href="#">Cookies</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-4">
+                            <p>© savallos.com </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- Modals -->
+    <div class="modals-wrapper">
+
+        <!-- Search form -->
+        <div class="offcanvas offcanvas-top offcanvas-search" id="searchForm" tabindex="-1">
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="py-3">
+                        <form class="search-form" action="#">
+                            <div class="position-relative d-flex align-items-center">
+                                <input type="text" class="form-control px-0" placeholder="Search">
+                                <button type="submit"
+                                    class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5 me-5">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.9481 4.12823C8.50494 4.12823 4.08752 8.52699 4.08752 13.9591C4.08752 19.3912 8.50494 23.7899 13.9481 23.7899C16.3631 23.7899 18.5763 22.924 20.2912 21.4861C20.3083 21.5066 20.3264 21.5265 20.3457 21.5457L26.348 27.5282C26.6833 27.8624 27.226 27.8615 27.5602 27.5262C27.8944 27.1909 27.8935 26.6482 27.5582 26.314L21.5559 20.3315C21.5379 20.3136 21.5193 20.2966 21.5001 20.2806C22.9407 18.5719 23.8087 16.367 23.8087 13.9591C23.8087 8.52699 19.3913 4.12823 13.9481 4.12823ZM5.80181 13.9591C5.80181 9.47911 9.44636 5.84252 13.9481 5.84252C18.4499 5.84252 22.0944 9.47911 22.0944 13.9591C22.0944 18.4391 18.4499 22.0757 13.9481 22.0757C9.44636 22.0757 5.80181 18.4391 5.80181 13.9591Z"
+                                            fill="#778894" />
+                                    </svg>
+                                </button>
+                                <button type="button"
+                                    class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5"
+                                    data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L24 24" stroke="#778894" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1 24L24 1" stroke="#778894" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
