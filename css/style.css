@@ -310,42 +310,63 @@ textarea {
 
 .form-control,
 .form-select {
-    border: 1px solid #778894;
+    border: none;
+    border-radius: 0;
 }
 
-.form-check-input {
-    border-color: #778894;
-    background-size: auto;
+.form-control {
+    border-bottom: 1px solid #778894;
 }
 
-.form-check-input:checked {
-    background-color: #fff;
-    border-color: #778894;
-}
-
-.form-check-input:checked[type=radio],
-.form-check-input:checked[type=checkbox] {
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.571411' y='0.572266' width='12.8571' height='12.8571' rx='3.57143' fill='%23FBE121'/%3E%3C/svg%3E");
-}
-
-.form-check-input[type=radio],
-.form-check-input[type=checkbox] {
-    border-radius: 0.25em;
+.form-select {
+    padding: 0.375rem 2.25rem 0.375rem 0;
 }
 
 .form-control:focus,
-.form-select:focus,
-.form-check-input:focus {
+.form-select:focus {
     border-color: #1D2D3A;
     box-shadow: none;
 }
 
 .search-form .form-control {
-    border-top-width: 0 !important;
-    border-right-width: 0 !important;
-    border-left-width: 0 !important;
-    border-radius: 0 !important;
+    border-bottom: 1px solid #778894;
     box-shadow: none !important;
+}
+
+.form-check-custom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-check-input-custom {
+    width: 24px;
+    height: 24px;
+    background-color: #EFF1F5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.form-check-input-custom:focus {
+    box-shadow: none;
+}
+
+.form-check-input-custom[type=radio],
+.form-check-input-custom[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check-input-custom:checked[type=radio],
+.form-check-input-custom:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H24V24H0V0Z' fill='%23EFF1F5'/%3E%3Cpath d='M6 6H18V18H6V6Z' fill='%23A7B4C8'/%3E%3C/svg%3E");
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -1064,6 +1085,13 @@ li {
 .feature-col-wrap>* {
     flex: 1 1 auto;
     max-width: 350px;
+    padding-bottom: 50px;
+}
+.card-feature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .features-item {
     display: flex;
@@ -1170,6 +1198,9 @@ li {
 }
 .card-products-wrap>* {
     flex: 1 1 auto;
+}
+.card-product {
+    padding-top: 40px;
 }
 .product-card-header {
     position: relative;
