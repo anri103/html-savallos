@@ -17,7 +17,7 @@ const prodSwiper = new Swiper('.prodSwiper', {
     spaceBetween: 30,
     freeMode: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.prodSwiper-pagination',
         type: 'fraction',
     },
     navigation: {
@@ -49,6 +49,36 @@ const partnersSwiper = new Swiper('.partnersSwiper', {
         },
         1200: {
             slidesPerView: 10,
+        },
+    },
+});
+
+const centeredSwiper = new Swiper('.centeredSwiper', {
+    effect: 'coverflow',
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 1.05,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.centeredSwiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-arrow-next',
+        prevEl: '.swiper-arrow-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 2,
         },
     },
 });

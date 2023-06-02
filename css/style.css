@@ -220,6 +220,10 @@ h6, .h6 {
     font-weight: 700;
 }
 
+.fs-12 {
+    font-size: 12px;
+}
+
 .fs-14 {
     font-size: 14px;
 }
@@ -240,6 +244,10 @@ h6, .h6 {
 
     .fs-xl-22 {
         font-size: 22px;
+    }
+
+    .fs-xl-30 {
+        font-size: 30px;
     }
 
     .fs-xl-40 {
@@ -999,6 +1007,14 @@ li {
 .swiper .btn-next:disabled,
 .swiper .btn-next.disabled {
     opacity: 0 !important;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to left,rgba(255,255,255,.75),rgba(255,255,255,.75));
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to right,rgba(255,255,255,.75),rgba(255,255,255,.75));
 }
 
 .section-hero {
