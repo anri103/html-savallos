@@ -246,6 +246,10 @@ h6, .h6 {
 
 @media (min-width: 1200px) {
 
+    .fs-xl-18 {
+        font-size: 18px;
+    }
+
     .fs-xl-22 {
         font-size: 22px;
     }
@@ -354,6 +358,7 @@ textarea {
 .form-check-input-custom {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
     background-color: #EFF1F5;
     background-repeat: no-repeat;
     background-position: center;
