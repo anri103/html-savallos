@@ -240,6 +240,10 @@ h6, .h6 {
     font-size: 30px;
 }
 
+.fs-40 {
+    font-size: 40px;
+}
+
 @media (min-width: 1200px) {
 
     .fs-xl-22 {
@@ -514,6 +518,10 @@ img {
 
 .z-index-5 {
     z-index: 5 !important;
+}
+
+.mb-55 {
+    margin-bottom: 55px !important;
 }
 
 .mb-105 {
@@ -1288,7 +1296,7 @@ li {
 }
 
 .section-waves {
-    padding: 60px 0;
+    padding: 55px 0;
 }
 
 .breadcrumb-section {
@@ -1316,6 +1324,15 @@ li {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 0;
+}
+
+.title-404 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 /*//////////////////////////////////////////////////////////////////
