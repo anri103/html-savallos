@@ -83,6 +83,31 @@ const centeredSwiper = new Swiper('.centeredSwiper', {
     },
 });
 
+const choosesectorSwiper = new Swiper('.choosesectorSwiper', {
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 1.25,
+    spaceBetween: 20,
+    pagination: {
+        el: '.choosesectorSwiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-arrow-next',
+        prevEl: '.swiper-arrow-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 

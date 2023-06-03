@@ -16,12 +16,7 @@
 
 <!-- ВНИМАТЕЛЬНО! класс "transparent-menu" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
 
-<body class="" style="overflow: hidden;">
-
-    <!-- Preloader -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background-color: #fff; z-index: 9999;">
-        <img src="img/loader.gif" alt="" width="180" height="180">
-    </div>
+<body class="">
 
     <!-- Main menu -->
     <div class="offcanvas offcanvas-end offcanvas-main-menu" id="offcanvasMenu" tabindex="-1">
@@ -201,7 +196,7 @@
                     <nav class="breadcrumb" role="navigation">
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><span>Private</span></li>
+                            <li><span>Commercial</span></li>
                         </ul>
                     </nav>
                 </div>
@@ -210,8 +205,8 @@
             <!-- Section about -->
             <section class="section mb-105" id="section-about">
                 <div class="container">
-                    <div class="title-shade" style="background-image: url(img/title-private.svg);">
-                        <h2 class="ff-title text-uppercase text-dark mb-0">Private</h2>
+                    <div class="title-shade" style="background-image: url(img/title-commercial.svg);">
+                        <h2 class="ff-title text-uppercase text-dark mb-0">Commercial</h2>
                     </div>
                     <div class="row">
                         <div class="col-xl-7 order-xl-2">
@@ -277,7 +272,7 @@
             </section>
 
             <!-- Section waves -->
-            <section class="section section-waves bg-white">
+            <section class="section section-waves">
                 <img class="w-100" src="img/waves-gray-01.svg" alt="">
             </section>
 
@@ -323,6 +318,50 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Section choose sector slider -->
+            <section class="section mb-105">
+                <div class="container">
+                    <div class="mb-5">
+                        <p class="ff-title text-dark fs-40">Choose your sector?</p>
+                    </div>
+                </div>
+                <div class="swiper choosesectorSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/sector-img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sector-img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sector-img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sector-img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sector-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-end gap-3 p-3" style="max-width: 1300px; margin-top: 35px;">
+                    <div class="choosesectorSwiper-pagination swiper-pagination slider-counter fs-14"></div>
+                    <div class="position-relative d-flex align-items-center gap-3">
+                        <div class="swiper-arrow-prev">
+                            <img src="img/arrow-left-gray.svg" alt="">
+                        </div>
+                        <div class="swiper-arrow-next">
+                            <img src="img/arrow-right-gray.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section waves -->
+            <section class="section section-waves">
+                <img class="w-100" src="img/waves-gray-01.svg" alt="">
             </section>
 
             <!-- Section products slider -->
@@ -479,11 +518,11 @@
                 <div class="container">
                     <div class="mx-auto" style="max-width: 550px;">
                         <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="flex-shrink-0">
+                            <div>
                                 <img class="img-fluid" src="img/catalog-download.png" alt="">
                             </div>
                             <div>
-                                <p class="ff-title text-dark fs-18 fs-xl-30 mb-0">Private catalog</p>
+                                <p class="ff-title text-dark fs-18 fs-xl-30 mb-0">Commercial catalog</p>
                                 <a href="#">
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="img/icon _download.svg" alt="">
@@ -493,161 +532,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Section waves -->
-            <section class="section section-waves bg-white">
-                <img class="w-100" src="img/waves-gray-01.svg" alt="">
-            </section>
-
-            <!-- Section products grid -->
-            <section class="section mb-105">
-                <div class="container">
-
-                    <div class="products-filter">
-                        <div class="d-flex gap-4 flex-column flex-xl-row mb-5">
-                            <div>
-                                <select class="form-select category-select fs-22">
-                                    <option selected>SELECT YOUR SECTOR</option>
-                                    <option value="1">Сategories</option>
-                                    <option value="2">Сategories</option>
-                                    <option value="3">Сategories</option>
-                                    <option value="4">Сategories</option>
-                                </select>
-                            </div>
-                            <div>
-                                <select class="form-select category-select fs-22">
-                                    <option selected>SELECT YOUR SECTOR</option>
-                                    <option value="1">Сategories</option>
-                                    <option value="2">Сategories</option>
-                                    <option value="3">Сategories</option>
-                                    <option value="4">Сategories</option>
-                                </select>
-                            </div>
-                            <div>
-                                <select class="form-select category-select fs-22">
-                                    <option selected>SELECT YOUR SECTOR</option>
-                                    <option value="1">Сategories</option>
-                                    <option value="2">Сategories</option>
-                                    <option value="3">Сategories</option>
-                                    <option value="4">Сategories</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-products-wrap">
-
-                        <div class="card-product">
-                            <div class="product-card-header">
-                                <div class="product-card-title">
-                                    <span class="ff-title fs-30 fs-xl-40">Hydroxeur Hot Tub</span>
-                                </div>
-                                <img class="product-card-img" src="img/product-01.png" alt="">
-                            </div>
-                            <div class="product-card-body">
-                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                <ul class="product-ul-grid">
-                                    <li>2300х900х860 mm</li>
-                                    <li>water</li>
-                                    <li>music</li>
-                                    <li>warmth</li>
-                                    <li>algae</li>
-                                    <li>oil</li>
-                                    <li>sea water</li>
-                                    <li>hydromassage</li>
-                                    <li>chromotherapy</li>
-                                </ul>
-                            </div>
-                            <div class="product-card-footer">
-                                <a class="btn btn-primary" href="#">view more</a>
-                            </div>
-                        </div>
-
-
-                        <div class="card-product">
-                            <div class="product-card-header">
-                                <div class="product-card-title">
-                                    <span class="ff-title fs-30 fs-xl-40">Vulkanosand Couch</span>
-                                </div>
-                                <img class="product-card-img" src="img/product-02.png" alt="">
-                            </div>
-                            <div class="product-card-body">
-                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                <ul class="product-ul-grid">
-                                    <li>2300х900х860 mm</li>
-                                    <li>water</li>
-                                    <li>music</li>
-                                    <li>warmth</li>
-                                    <li>algae</li>
-                                    <li>oil</li>
-                                    <li>sea water</li>
-                                    <li>hydromassage</li>
-                                    <li>chromotherapy</li>
-                                </ul>
-                            </div>
-                            <div class="product-card-footer">
-                                <a class="btn btn-primary" href="#">view more</a>
-                            </div>
-                        </div>
-
-
-                        <div class="card-product">
-                            <div class="product-card-header">
-                                <div class="product-card-title">
-                                    <span class="ff-title fs-30 fs-xl-40">Hydroxeur Hot Tub</span>
-                                </div>
-                                <img class="product-card-img" src="img/product-01.png" alt="">
-                            </div>
-                            <div class="product-card-body">
-                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                <ul class="product-ul-grid">
-                                    <li>2300х900х860 mm</li>
-                                    <li>water</li>
-                                    <li>music</li>
-                                    <li>warmth</li>
-                                    <li>algae</li>
-                                    <li>oil</li>
-                                    <li>sea water</li>
-                                    <li>hydromassage</li>
-                                    <li>chromotherapy</li>
-                                </ul>
-                            </div>
-                            <div class="product-card-footer">
-                                <a class="btn btn-primary" href="#">view more</a>
-                            </div>
-                        </div>
-
-
-                        <div class="card-product">
-                            <div class="product-card-header">
-                                <div class="product-card-title">
-                                    <span class="ff-title fs-30 fs-xl-40">Vulkanosand Couch</span>
-                                </div>
-                                <img class="product-card-img" src="img/product-03.png" alt="">
-                            </div>
-                            <div class="product-card-body">
-                                <p class="product-card-sub-title ff-title fs-22 fs-xl-22">Lorem ipsum dolor sit amet</p>
-                                <ul class="product-ul-grid">
-                                    <li>2300х900х860 mm</li>
-                                    <li>water</li>
-                                    <li>music</li>
-                                    <li>warmth</li>
-                                    <li>algae</li>
-                                    <li>oil</li>
-                                    <li>sea water</li>
-                                    <li>hydromassage</li>
-                                    <li>chromotherapy</li>
-                                </ul>
-                            </div>
-                            <div class="product-card-footer">
-                                <a class="btn btn-primary" href="#">view more</a>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
             </section>
 

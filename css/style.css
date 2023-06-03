@@ -1030,6 +1030,14 @@ li {
     background-image: linear-gradient(to right,rgba(255,255,255,.75),rgba(255,255,255,.75));
 }
 
+.centeredSwiper img {
+    width: 100%;
+}
+
+.choosesectorSwiper img {
+    width: 100%;
+}
+
 .section-hero {
     padding-top: 270px;
     padding-bottom: 0;
