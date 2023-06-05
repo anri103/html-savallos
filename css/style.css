@@ -1435,6 +1435,21 @@ li {
     height: 230px;
 }
 
+.section-post-hero {
+    padding-top: 275px;
+    padding-bottom: 200px;
+}
+
+.section-post-content h1,
+.section-post-content h2,
+.section-post-content h3,
+.section-post-content h4,
+.section-post-content h5,
+.section-post-content h6 {
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
