@@ -108,6 +108,29 @@ const choosesectorSwiper = new Swiper('.choosesectorSwiper', {
     },
 });
 
+const cataloguesSwiper = new Swiper('.cataloguesSwiper', {
+    loop: true,
+    slidesPerView: 1.25,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+        el: '.cataloguesSwiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.cataloguesSwiper-navigation .swiper-arrow-next',
+        prevEl: '.cataloguesSwiper-navigation .swiper-arrow-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
