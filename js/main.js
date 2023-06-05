@@ -131,6 +131,29 @@ const cataloguesSwiper = new Swiper('.cataloguesSwiper', {
     },
 });
 
+const feedbackSwiper = new Swiper('.feedbackSwiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+        el: '.feedbackSwiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.feedbackSwiper-navigation .swiper-arrow-next',
+        prevEl: '.feedbackSwiper-navigation .swiper-arrow-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 

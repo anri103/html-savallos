@@ -228,6 +228,10 @@ h6, .h6 {
     font-size: 14px;
 }
 
+.fs-16 {
+    font-size: 16px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -1410,6 +1414,21 @@ li {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.feedback-card {
+    display: flex;
+    gap: 16px;
+}
+
+.feedback-card .feedback-avatar {
+    min-width: 165px;
+    max-width: 220px;
+}
+
+.feedback-card .feedback-avatar img {
+    width: 100%;
+    margin-bottom: 22px;
 }
 
 /*//////////////////////////////////////////////////////////////////
