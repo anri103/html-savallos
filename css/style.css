@@ -1431,6 +1431,10 @@ li {
     margin-bottom: 22px;
 }
 
+.blog-grid .grid-item .image-container img {
+    height: 230px;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
