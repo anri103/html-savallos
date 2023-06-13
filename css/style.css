@@ -564,6 +564,10 @@ li {
     margin-bottom: 0;
 }
 
+.bg-contain {
+    background-size: contain !important;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ ANIMATIONS ]*/
 
@@ -1521,5 +1525,12 @@ li {
 
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 1300px;
+    }
+}
+
+@media (min-width: 1900px) {
+
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1700px;
     }
 }
