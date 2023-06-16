@@ -154,6 +154,18 @@ const feedbackSwiper = new Swiper('.feedbackSwiper', {
     },
 });
 
+const aboutSwiper = new Swiper('.aboutSwiper', {
+    loop: true,
+    pagination: {
+        el: '.aboutSwiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-arrow-next',
+        prevEl: '.swiper-arrow-prev',
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
@@ -161,3 +173,38 @@ Fancybox.bind("[data-fancybox]", {
     // Your custom options
 });
 
+// Custom product page tabs
+
+const tabProd = (tabId) => {
+    const tabContent = document.getElementById(`content-${tabId}`);
+
+    // Hide all tab contents
+    const allTabs = document.querySelectorAll('.prod-tab');
+    allTabs.forEach(tab => {
+        tab.style.display = 'none';
+    });
+
+    // Show the selected tab content
+    tabContent.style.display = 'block';
+}
+// Show the first tab content by default
+const defaultProdTab = document.querySelector('input[name="prod-tabs"]:checked');
+tabProd(defaultProdTab.id);
+
+// Custom catalogues tabs
+
+const tabCatalogues = (tabId) => {
+    const tabContent = document.getElementById(`content-${tabId}`);
+
+    // Hide all tab contents
+    const allTabs = document.querySelectorAll('.cat-tab');
+    allTabs.forEach(tab => {
+        tab.style.display = 'none';
+    });
+
+    // Show the selected tab content
+    tabContent.style.display = 'block';
+}
+// Show the first tab content by default
+const defaultTab = document.querySelector('input[name="cat-tabs"]:checked');
+tabCatalogues(defaultTab.id);

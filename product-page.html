@@ -203,33 +203,41 @@
             </section>
 
             <!-- Section about -->
-            <section class="section mb-105" id="section-about">
+            <section class="section section-with-slider mb-105" id="section-about">
                 <div class="container">
-                    <style>
-                        .title-shade {
-                            position: relative;
-                            overflow: hidden;
-                        }
-                        .big-shade {
-                            position: absolute;
-                            top: 50%;
-                            left: 16px;
-                            transform: translateY(-50%);
-                            color: #EFF1F5;
-                            font-family: "URWClassicoRegular", sans-serif;
-                            text-transform: uppercase;
-                            font-size: 100px;
-                            white-space: nowrap;
-                            z-index: -1;
-                        }
-                    </style>
                     <div class="title-shade">
-                        <div class="big-shade" tabindex="-1">Hydroxeur</div>
                         <h2 class="ff-title text-uppercase text-dark mb-0">Hydroxeur</h2>
+                        <div class="title-big-shade">Hydroxeur</div>
                     </div>
                     <div class="row">
                         <div class="col-xl-7 order-xl-2">
-                            <img class="w-100" src="img/section-products.jpg" alt="">
+                            <!-- About slider -->
+                            <div class="swiper aboutSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="w-100" src="img/section-products.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100" src="img/section-products.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100" src="img/section-products.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
+                                    <div class="aboutSwiper-pagination swiper-pagination slider-counter fs-14"></div>
+                                    <div class="position-relative d-flex align-items-center gap-3">
+                                        <div class="swiper-arrow-prev">
+                                            <img src="img/arrow-left-gray.svg" alt="">
+                                        </div>
+                                        <div class="swiper-arrow-next">
+                                            <img src="img/arrow-right-gray.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-xl-5 order-xl-1">
                             <div class="text-block-about">
@@ -290,52 +298,111 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column flex-xl-row gap-4 mb-5">
-                        <div class="form-check-custom">
-                            <input class="form-check-input-custom" type="radio" name="prod-tab" id="radio-prod-tab-01" checked>
-                            <label class="form-check-label-custom fs-22" for="radio-prod-tab-01">
-                                Description
-                            </label>
-                        </div>
-                        <div class="form-check-custom">
-                            <input class="form-check-input-custom" type="radio" name="prod-tab" id="radio-prod-tab-02">
-                            <label class="form-check-label-custom fs-22" for="radio-prod-tab-02">
-                                Technical specifications
-                            </label>
+                    <div class="prod-tabs">
+                        <div class="d-flex flex-column flex-xl-row gap-4 mb-5">
+                            <div class="form-check-custom">
+                                <input class="form-check-input-custom" type="radio" name="prod-tabs" id="prod-tab-01" onclick="tabProd('prod-tab-01')" checked>
+                                <label class="form-check-label-custom fs-22" for="prod-tab-01">
+                                    Description
+                                </label>
+                            </div>
+                            <div class="form-check-custom">
+                                <input class="form-check-input-custom" type="radio" name="prod-tabs" id="prod-tab-02" onclick="tabProd('prod-tab-02')">
+                                <label class="form-check-label-custom fs-22" for="prod-tab-02">
+                                    Technical specifications
+                                </label>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="mb-5" style="max-width: 900px;">
-                        <p class="text-dark fs-30">Description</p>
-                        <p>The Hydroxeur® massage baths use a unique technology thatmixes water with tiny air bubbles. Due to this effect champagne" provides an ideal underwater massage with a therapeutic effect, unparalleled.</p>
-                        <p>The flicker-free illumination of the water fills the bathtub with a full rainbow spectrum. Chromotherapy It has a regenerating and vitalizing effect on thoughts and emotions. Backlightwater can be set to the full color spectrum or individual color according to your needs.choice.</p>
-                        <p>With Hydroxeur® you have a choice of detox treatments, aromatherapyor thalassotherapy. It is also possible to equip the bathtub with special fittingsfor mineral, thermal and sea water.</p>
+                    <div class="prod-tabs-content">
+                        <!-- TAB 1 -->
+                        <div class="prod-tab" id="content-prod-tab-01">
+                            <div class="mb-5" style="max-width: 900px;">
+                                <p class="text-dark fs-30">Description</p>
+                                <p>The Hydroxeur® massage baths use a unique technology thatmixes water with tiny air bubbles. Due to this effect champagne" provides an ideal underwater massage with a therapeutic effect, unparalleled.</p>
+                                <p>The flicker-free illumination of the water fills the bathtub with a full rainbow spectrum. Chromotherapy It has a regenerating and vitalizing effect on thoughts and emotions. Backlightwater can be set to the full color spectrum or individual color according to your needs.choice.</p>
+                                <p>With Hydroxeur® you have a choice of detox treatments, aromatherapyor thalassotherapy. It is also possible to equip the bathtub with special fittingsfor mineral, thermal and sea water.</p>
+                            </div>
+        
+                            <div class="mb-5">
+                                <div class="row row-cols-1 row-cols-xl-2">
+                                    <div class="col">
+                                        <p class="text-dark fs-30">Effect</p>
+                                        <ul>
+                                            <li>Relieves stress</li>
+                                            <li>Cellulite treatment</li>
+                                            <li>Improvement of blood circulation</li>
+                                            <li>Stimulation of the lymphatic system</li>
+                                            <li>Increasing the elasticity of the skin and connective tissue</li>
+                                            <li>Participation in tenders, quotation, auction</li>
+                                            <li>Weight loss effect</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-dark fs-30">Optional features</p>
+                                        <ul>
+                                            <li>Silent filling in a short time</li>
+                                            <li>The thermostat provides the required water temperature</li>
+                                            <li>Rated power — 48l/min</li>
+                                            <li>Flicker and Spectral Underwater Lighting: Comprehensive, high-performance LED color with rainbow-changing colors. This leads to chromo-regeneration and revitalization</li>
+                                            <li>Additional indirect lighting on the panel makes the atmosphere cozy</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2 -->
+                        <div class="prod-tab" id="content-prod-tab-02">
+                            <div class="mb-5" style="max-width: 900px;">
+                                <p class="text-dark fs-30">Technical specifications</p>
+                                <ul>
+                                    <li>60-290 jets provide optimal vibration and pulsating massage</li>
+                                    <li>Individual programming</li>
+                                    <li>Ergonomic massage of reflex zones</li>
+                                    <li>Bath body made of hot water resistant, seamless acrylic glass</li>
+                                </ul>
+                            </div>
+                            <div class="mb-5" style="max-width: 900px;">
+                                <table class="table prod-table">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Material</th>
+                                        <td>Lucite Medical Acrylic</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Size</th>
+                                        <td>1980*900*770/790 mm</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Useful volume</th>
+                                        <td>220 l</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Drain</th>
+                                        <td>DN70/100</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Voltage</th>
+                                        <td>230 V/400 V, 50 Hz</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Production</th>
+                                        <td>Germany</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="mb-5">
-                        <div class="row row-cols-1 row-cols-xl-2">
-                            <div class="col">
-                                <p class="text-dark fs-30">Effect</p>
-                                <ul>
-                                    <li>Relieves stress</li>
-                                    <li>Cellulite treatment</li>
-                                    <li>Improvement of blood circulation</li>
-                                    <li>Stimulation of the lymphatic system</li>
-                                    <li>Increasing the elasticity of the skin and connective tissue</li>
-                                    <li>Participation in tenders, quotation, auction</li>
-                                    <li>Weight loss effect</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <p class="text-dark fs-30">Optional features</p>
-                                <ul>
-                                    <li>Silent filling in a short time</li>
-                                    <li>The thermostat provides the required water temperature</li>
-                                    <li>Rated power — 48l/min</li>
-                                    <li>Flicker and Spectral Underwater Lighting: Comprehensive, high-performance LED color with rainbow-changing colors. This leads to chromo-regeneration and revitalization</li>
-                                    <li>Additional indirect lighting on the panel makes the atmosphere cozy</li>
-                                </ul>
-                            </div>
+                    <div class="d-flex flex-column flex-xl-row align-items-xl-center">
+                        <div class="ff-title fs-30 fs-xl-40 flex-shrink-0 me-4 mb-3 mb-xl-0"><a href="#">REQUEST INFORMATION</a></div>
+                        <div class="d-flex align-items-center" style="gap: 43px;">
+                            <svg class="hover-arrow" width="11" height="25" viewBox="0 0 11 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 13.5091L11 11.3932L-1.09262e-06 0L-9.845e-07 2.47396L9.40402 12.4023L-1.08124e-07 22.526L0 25L11 13.5091Z" fill="#778894"></path>
+                            </svg>
                         </div>
                     </div>
 
@@ -527,12 +594,6 @@
                                 </div>
                                 <div class="mb-3">
                                     <textarea class="form-control" id="request-textarea" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <input class="inputfile" type="file" id="formFile">
-                                    <label for="formFile">
-                                        <img src="img/form-file.png" alt="">
-                                    </label>
                                 </div>
                             </div>
                             <div class="form-submit-container">
