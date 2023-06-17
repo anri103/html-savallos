@@ -197,7 +197,7 @@ const tabCatalogues = (tabId) => {
     const tabContent = document.getElementById(`content-${tabId}`);
 
     // Hide all tab contents
-    const allTabs = document.querySelectorAll('.cat-tab');
+    const allTabs = document.querySelectorAll('.catalog-tab');
     allTabs.forEach(tab => {
         tab.style.display = 'none';
     });
@@ -206,5 +206,5 @@ const tabCatalogues = (tabId) => {
     tabContent.style.display = 'block';
 }
 // Show the first tab content by default
-const defaultTab = document.querySelector('input[name="cat-tabs"]:checked');
+const defaultTab = document.querySelector('input[name="catalog-tabs"]:checked');
 tabCatalogues(defaultTab.id);
