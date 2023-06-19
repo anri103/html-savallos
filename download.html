@@ -208,15 +208,21 @@
                     <p class="ff-title text-dark fs-30">Catalogues</p>
 
                     <div class="catalog-tabs">
-                        <div class="d-flex flex-column flex-xl-row gap-4 mb-5">
-                            <div class="form-check-custom">
-                                <input class="form-check-input-custom" type="radio" name="catalog-tabs" id="catalog-tab-01" onclick="tabProd('catalog-tab-01')" checked>
+                        <div class="d-flex flex-column flex-xl-row gap-4 mb-5" role="tablist">
+                            <div class="form-check-custom" role="tab" data-bs-toggle="pill" data-bs-target="#content-catalog-tab-00" aria-controls="content-catalog-tab-00" aria-selected="false">
+                                <input class="form-check-input-custom" type="radio" name="catalog-tabs" id="catalog-tab-00">
+                                <label class="form-check-label-custom fs-22" for="catalog-tab-00">
+                                    All
+                                </label>
+                            </div>
+                            <div class="form-check-custom active" role="tab" data-bs-toggle="pill" data-bs-target="#content-catalog-tab-01" aria-controls="content-catalog-tab-01" aria-selected="true">
+                                <input class="form-check-input-custom" type="radio" name="catalog-tabs" id="catalog-tab-01" checked>
                                 <label class="form-check-label-custom fs-22" for="catalog-tab-01">
                                     Description
                                 </label>
                             </div>
-                            <div class="form-check-custom">
-                                <input class="form-check-input-custom" type="radio" name="catalog-tabs" id="catalog-tab-02" onclick="tabProd('catalog-tab-01')">
+                            <div class="form-check-custom" role="tab" data-bs-toggle="pill" data-bs-target="#content-catalog-tab-02" aria-controls="content-catalog-tab-02" aria-selected="false">
+                                <input class="form-check-input-custom" type="radio" name="catalog-tabs" id="catalog-tab-02">
                                 <label class="form-check-label-custom fs-22" for="catalog-tab-02">
                                     Technical specifications
                                 </label>
@@ -224,16 +230,16 @@
                         </div>
                     </div>
 
-                    <div class="catalog-tabs-content">
-                        <!-- TAB 1 -->
-                        <div class="catalog-tab" id="content-catalog-tab-01">
+                    <div class="tab-content">
+                        <!-- TAB ALL -->
+                        <div class="tab-pane fade" id="content-catalog-tab-00" role="tabpanel" tabindex="0">
                             <div class="swiper cataloguesSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="catalog-card">
                                             <img src="img/catalog-download.png" alt="">
                                             <div>
-                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English 1</p>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
                                                 <a href="#">
                                                     <div class="d-flex align-items-center gap-3">
                                                         <img src="img/icon _download.svg" alt="">
@@ -247,7 +253,7 @@
                                         <div class="catalog-card">
                                             <img src="img/catalog-download.png" alt="">
                                             <div>
-                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English 2</p>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
                                                 <a href="#">
                                                     <div class="d-flex align-items-center gap-3">
                                                         <img src="img/icon _download.svg" alt="">
@@ -261,7 +267,7 @@
                                         <div class="catalog-card">
                                             <img src="img/catalog-download.png" alt="">
                                             <div>
-                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English 3</p>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
                                                 <a href="#">
                                                     <div class="d-flex align-items-center gap-3">
                                                         <img src="img/icon _download.svg" alt="">
@@ -275,7 +281,7 @@
                                         <div class="catalog-card">
                                             <img src="img/catalog-download.png" alt="">
                                             <div>
-                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English 4</p>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
                                                 <a href="#">
                                                     <div class="d-flex align-items-center gap-3">
                                                         <img src="img/icon _download.svg" alt="">
@@ -289,7 +295,7 @@
                                         <div class="catalog-card">
                                             <img src="img/catalog-download.png" alt="">
                                             <div>
-                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English 5</p>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
                                                 <a href="#">
                                                     <div class="d-flex align-items-center gap-3">
                                                         <img src="img/icon _download.svg" alt="">
@@ -300,23 +306,113 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="cataloguesSwiper-navigation">
-                                <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
-                                    <div class="cataloguesSwiper-pagination swiper-pagination slider-counter fs-14"></div>
-                                    <div class="position-relative d-flex align-items-center gap-3">
-                                        <div class="swiper-arrow-prev">
-                                            <img src="img/arrow-left-gray.svg" alt="">
+                                <div class="navigation-container">
+                                    <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
+                                        <div class="swiper-pagination slider-counter fs-14"></div>
+                                        <div class="position-relative d-flex align-items-center gap-3">
+                                            <div class="swiper-arrow-prev">
+                                                <img src="img/arrow-left-gray.svg" alt="">
+                                            </div>
+                                            <div class="swiper-arrow-next">
+                                                <img src="img/arrow-right-gray.svg" alt="">
+                                            </div>
                                         </div>
-                                        <div class="swiper-arrow-next">
-                                            <img src="img/arrow-right-gray.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TAB 1 -->
+                        <div class="tab-pane fade show active" id="content-catalog-tab-01" role="tabpanel" tabindex="0">
+                            <div class="swiper cataloguesSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="catalog-card">
+                                            <img src="img/catalog-download.png" alt="">
+                                            <div>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="img/icon _download.svg" alt="">
+                                                        <span class="text-uppercase fs-12">Download PDF - 10MB</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="catalog-card">
+                                            <img src="img/catalog-download.png" alt="">
+                                            <div>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="img/icon _download.svg" alt="">
+                                                        <span class="text-uppercase fs-12">Download PDF - 10MB</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="catalog-card">
+                                            <img src="img/catalog-download.png" alt="">
+                                            <div>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="img/icon _download.svg" alt="">
+                                                        <span class="text-uppercase fs-12">Download PDF - 10MB</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="catalog-card">
+                                            <img src="img/catalog-download.png" alt="">
+                                            <div>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="img/icon _download.svg" alt="">
+                                                        <span class="text-uppercase fs-12">Download PDF - 10MB</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="catalog-card">
+                                            <img src="img/catalog-download.png" alt="">
+                                            <div>
+                                                <p class="fs-18 fs-xl-30 mb-0">Shade Collection - English</p>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="img/icon _download.svg" alt="">
+                                                        <span class="text-uppercase fs-12">Download PDF - 10MB</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="navigation-container">
+                                    <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
+                                        <div class="swiper-pagination slider-counter fs-14"></div>
+                                        <div class="position-relative d-flex align-items-center gap-3">
+                                            <div class="swiper-arrow-prev">
+                                                <img src="img/arrow-left-gray.svg" alt="">
+                                            </div>
+                                            <div class="swiper-arrow-next">
+                                                <img src="img/arrow-right-gray.svg" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- TAB 2 -->
-                        <div class="catalog-tab" id="content-catalog-tab-02">
+                        <div class="tab-pane fade" id="content-catalog-tab-02" role="tabpanel" tabindex="0">
                             <div class="swiper cataloguesSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -390,16 +486,16 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="cataloguesSwiper-navigation">
-                                <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
-                                    <div class="cataloguesSwiper-pagination swiper-pagination slider-counter fs-14"></div>
-                                    <div class="position-relative d-flex align-items-center gap-3">
-                                        <div class="swiper-arrow-prev">
-                                            <img src="img/arrow-left-gray.svg" alt="">
-                                        </div>
-                                        <div class="swiper-arrow-next">
-                                            <img src="img/arrow-right-gray.svg" alt="">
+                                <div class="navigation-container">
+                                    <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
+                                        <div class="swiper-pagination slider-counter fs-14"></div>
+                                        <div class="position-relative d-flex align-items-center gap-3">
+                                            <div class="swiper-arrow-prev">
+                                                <img src="img/arrow-left-gray.svg" alt="">
+                                            </div>
+                                            <div class="swiper-arrow-next">
+                                                <img src="img/arrow-right-gray.svg" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -17,7 +17,7 @@ const prodSwiper = new Swiper('.prodSwiper', {
     spaceBetween: 30,
     freeMode: true,
     pagination: {
-        el: '.prodSwiper-pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
     },
     navigation: {
@@ -40,8 +40,8 @@ const partnersSwiper = new Swiper('.partnersSwiper', {
     spaceBetween: 16,
     freeMode: true,
     navigation: {
-        nextEl: '.swiper-custom-next',
-        prevEl: '.swiper-custom-prev',
+        nextEl: '.swiper-chevron-next',
+        prevEl: '.swiper-chevron-prev',
     },
     breakpoints: {
         768: {
@@ -66,7 +66,7 @@ const centeredSwiper = new Swiper('.centeredSwiper', {
         slideShadows: true,
     },
     pagination: {
-        el: '.centeredSwiper-pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
     },
     navigation: {
@@ -89,7 +89,7 @@ const choosesectorSwiper = new Swiper('.choosesectorSwiper', {
     slidesPerView: 1.25,
     spaceBetween: 20,
     pagination: {
-        el: '.choosesectorSwiper-pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
     },
     navigation: {
@@ -114,12 +114,12 @@ const cataloguesSwiper = new Swiper('.cataloguesSwiper', {
     spaceBetween: 30,
     freeMode: true,
     pagination: {
-        el: '.cataloguesSwiper-pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
     },
     navigation: {
-        nextEl: '.cataloguesSwiper-navigation .swiper-arrow-next',
-        prevEl: '.cataloguesSwiper-navigation .swiper-arrow-prev',
+        nextEl: '.swiper-arrow-next',
+        prevEl: '.swiper-arrow-prev',
     },
     breakpoints: {
         768: {
@@ -137,12 +137,12 @@ const feedbackSwiper = new Swiper('.feedbackSwiper', {
     spaceBetween: 30,
     freeMode: true,
     pagination: {
-        el: '.feedbackSwiper-pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
     },
     navigation: {
-        nextEl: '.feedbackSwiper-navigation .swiper-arrow-next',
-        prevEl: '.feedbackSwiper-navigation .swiper-arrow-prev',
+        nextEl: '.swiper-arrow-next',
+        prevEl: '.swiper-arrow-prev',
     },
     breakpoints: {
         768: {
@@ -157,7 +157,7 @@ const feedbackSwiper = new Swiper('.feedbackSwiper', {
 const aboutSwiper = new Swiper('.aboutSwiper', {
     loop: true,
     pagination: {
-        el: '.aboutSwiper-pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
     },
     navigation: {
@@ -172,39 +172,3 @@ const aboutSwiper = new Swiper('.aboutSwiper', {
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
 });
-
-// Custom product page tabs
-
-const tabProd = (tabId) => {
-    const tabContent = document.getElementById(`content-${tabId}`);
-
-    // Hide all tab contents
-    const allTabs = document.querySelectorAll('.prod-tab');
-    allTabs.forEach(tab => {
-        tab.style.display = 'none';
-    });
-
-    // Show the selected tab content
-    tabContent.style.display = 'block';
-}
-// Show the first tab content by default
-const defaultProdTab = document.querySelector('input[name="prod-tabs"]:checked');
-tabProd(defaultProdTab.id);
-
-// Custom catalogues tabs
-
-const tabCatalogues = (tabId) => {
-    const tabContent = document.getElementById(`content-${tabId}`);
-
-    // Hide all tab contents
-    const allTabs = document.querySelectorAll('.catalog-tab');
-    allTabs.forEach(tab => {
-        tab.style.display = 'none';
-    });
-
-    // Show the selected tab content
-    tabContent.style.display = 'block';
-}
-// Show the first tab content by default
-const defaultTab = document.querySelector('input[name="catalog-tabs"]:checked');
-tabCatalogues(defaultTab.id);

@@ -224,16 +224,16 @@
                                         <img class="w-100" src="img/product-page-01.jpg" alt="">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="aboutSwiper-navigation">
-                                <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
-                                    <div class="aboutSwiper-pagination swiper-pagination slider-counter fs-14"></div>
-                                    <div class="position-relative d-flex align-items-center gap-3">
-                                        <div class="swiper-arrow-prev">
-                                            <img src="img/arrow-left-gray.svg" alt="">
-                                        </div>
-                                        <div class="swiper-arrow-next">
-                                            <img src="img/arrow-right-gray.svg" alt="">
+                                <div class="navigation-container">
+                                    <div class="d-flex align-items-center justify-content-end gap-3" style="margin-top: 35px;">
+                                        <div class="swiper-pagination slider-counter fs-14"></div>
+                                        <div class="position-relative d-flex align-items-center gap-3">
+                                            <div class="swiper-arrow-prev">
+                                                <img src="img/arrow-left-gray.svg" alt="">
+                                            </div>
+                                            <div class="swiper-arrow-next">
+                                                <img src="img/arrow-right-gray.svg" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -298,15 +298,15 @@
                     </div>
 
                     <div class="prod-tabs">
-                        <div class="d-flex flex-column flex-xl-row gap-4 mb-5">
-                            <div class="form-check-custom">
-                                <input class="form-check-input-custom" type="radio" name="prod-tabs" id="prod-tab-01" onclick="tabProd('prod-tab-01')" checked>
+                        <div class="d-flex flex-column flex-xl-row gap-4 mb-5" role="tablist">
+                            <div class="form-check-custom active" role="tab" data-bs-toggle="pill" data-bs-target="#content-prod-tab-01" aria-controls="content-prod-tab-01" aria-selected="true">
+                                <input class="form-check-input-custom" type="radio" name="prod-tabs" id="prod-tab-01" checked>
                                 <label class="form-check-label-custom fs-22" for="prod-tab-01">
                                     Description
                                 </label>
                             </div>
-                            <div class="form-check-custom">
-                                <input class="form-check-input-custom" type="radio" name="prod-tabs" id="prod-tab-02" onclick="tabProd('prod-tab-02')">
+                            <div class="form-check-custom" role="tab" data-bs-toggle="pill" data-bs-target="#content-prod-tab-02" aria-controls="content-prod-tab-02" aria-selected="false">
+                                <input class="form-check-input-custom" type="radio" name="prod-tabs" id="prod-tab-02">
                                 <label class="form-check-label-custom fs-22" for="prod-tab-02">
                                     Technical specifications
                                 </label>
@@ -314,9 +314,9 @@
                         </div>
                     </div>
 
-                    <div class="prod-tabs-content">
+                    <div class="tab-content">
                         <!-- TAB 1 -->
-                        <div class="prod-tab" id="content-prod-tab-01">
+                        <div class="tab-pane fade show active" id="content-prod-tab-01" role="tabpanel" tabindex="0">
                             <div class="mb-5" style="max-width: 900px;">
                                 <p class="text-dark fs-30">Description</p>
                                 <p>The Hydroxeur® massage baths use a unique technology thatmixes water with tiny air bubbles. Due to this effect champagne" provides an ideal underwater massage with a therapeutic effect, unparalleled.</p>
@@ -351,9 +351,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- TAB 2 -->
-                        <div class="prod-tab" id="content-prod-tab-02">
+                        <div class="tab-pane fade" id="content-prod-tab-02" role="tabpanel" tabindex="0">
                             <div class="mb-5" style="max-width: 900px;">
                                 <p class="text-dark fs-30">Technical specifications</p>
                                 <ul>
